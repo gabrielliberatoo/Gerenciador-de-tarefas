@@ -1,0 +1,6 @@
+build/
+GerenciadorDeTarefas.exe
+Testes.exe
+compile_flags.txt
+report/
+coverage.info

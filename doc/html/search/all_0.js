@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['_5faltura_5fterminal_0',['_altura_terminal',['../classTerminal.html#ac23f70e4a6bfe74cb430d10ce14f7d69',1,'Terminal']]],
+  ['_5fconcluido_1',['_concluido',['../classTarefa.html#a02764495d093d388ec2fb21c0bde3603',1,'Tarefa']]],
+  ['_5fdescricao_2',['_descricao',['../classGrupo.html#a8f3c802c33537298ddbbc8b11bcea2f3',1,'Grupo::_descricao()'],['../classTarefa.html#acc9dffa5eb12b46370e67b32b96863f2',1,'Tarefa::_descricao()']]],
+  ['_5ffile_3',['_file',['../classStorage.html#ad9934ed8b6423a91135819a7f301ffba',1,'Storage']]],
+  ['_5fgrupo_5ftarefa_4',['_grupo_tarefa',['../classTarefa.html#a54326411de197afb5a6f8d98d109e840',1,'Tarefa']]],
+  ['_5fgrupos_5',['_grupos',['../classStorage.html#a4bd9a86ddbe7dd8d4f2a2b0fe60255e6',1,'Storage']]],
+  ['_5flargura_5fterminal_6',['_largura_terminal',['../classTerminal.html#ac8f19b80b3c009efad6017cf5236510a',1,'Terminal']]],
+  ['_5flogado_7',['_logado',['../classStorage.html#afb88caad0d6b81083c03169d39718f81',1,'Storage']]],
+  ['_5fnivel_5fprioridade_8',['_nivel_prioridade',['../classPrioridade.html#a33d58f99a6bab88419583a66b0a8e3b5',1,'Prioridade']]],
+  ['_5fnome_5fetiqueta_9',['_nome_etiqueta',['../classEtiqueta.html#ad33c17ad4b54e7e8a1a760650747ee71',1,'Etiqueta']]],
+  ['_5fnome_5fusuario_10',['_nome_usuario',['../classUsuario.html#a1f8c614f94b3ac85915bf27aedd86ffb',1,'Usuario']]],
+  ['_5fpadding_5fx_11',['_padding_x',['../classTerminal.html#ac50acd9b920ff6d6759f953527869ea0',1,'Terminal']]],
+  ['_5fpadding_5fy_12',['_padding_y',['../classTerminal.html#aa11effca90a9379eeee9776a41a79456',1,'Terminal']]],
+  ['_5fpagina_5fatual_13',['_pagina_atual',['../classTerminal.html#ae16d3b2e118315e028a06cea51e1a5ac',1,'Terminal']]],
+  ['_5fprazo_14',['_prazo',['../classTarefa.html#a4836ad542cc73ff37b4473587fc630cd',1,'Tarefa']]],
+  ['_5fprioridade_5ftarefa_15',['_prioridade_tarefa',['../classTarefa.html#a2f41a39b7098d77a1e1773cb1a4177d4',1,'Tarefa']]],
+  ['_5fprioridades_16',['_prioridades',['../classStorage.html#a1cd2e4e622c1e7988c8bc52f2a56f869',1,'Storage']]],
+  ['_5fqtd_5fmembros_17',['_qtd_membros',['../classEtiqueta.html#af72d9ff60b84f4635e78f12ec8f80dab',1,'Etiqueta']]],
+  ['_5fstorage_18',['_storage',['../classTerminal.html#a13bab737b1972d98bc4c8912fad52b2a',1,'Terminal::_storage()'],['../classUsuario.html#ab513a33701fd16851c1307906913bf10',1,'Usuario::_storage()']]],
+  ['_5ftarefas_19',['_tarefas',['../classStorage.html#a289eb400729d4db505aa427cdcd83fdf',1,'Storage']]],
+  ['_5ftarefas_5fpor_5fpagina_20',['_tarefas_por_pagina',['../classTerminal.html#a51ad09d06d4ca9f3204d266d94c8fdcc',1,'Terminal']]],
+  ['_5ftipo_21',['_tipo',['../classEtiqueta.html#af4097d8bb6e190bb32c6bf70177f8b0c',1,'Etiqueta']]],
+  ['_5ftitulo_22',['_titulo',['../classTarefa.html#a2ff0165cde44ccf91162eeb22edb2c4d',1,'Tarefa']]],
+  ['_5fusuario_23',['_usuario',['../classTerminal.html#aa5f996ee61173aaacf9b843fa211426e',1,'Terminal']]],
+  ['_5fusuario_5flogado_24',['_usuario_logado',['../classStorage.html#a2c715507a5c7b44e912a827faf310dc8',1,'Storage']]]
+];

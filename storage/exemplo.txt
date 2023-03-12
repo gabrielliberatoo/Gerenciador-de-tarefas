@@ -1,0 +1,75 @@
+teste
+[grupo]
+Faculdade
+Trabalhos, provas e atividades
+[grupo]
+Trabalho
+Tarefas do trabalho
+[grupo]
+Casa
+Tarefas de casa
+[prioridade]
+Urgente
+1
+[prioridade]
+Média
+2
+[prioridade]
+Baixa
+3
+[tarefa]
+Limpar a casa
+Passar pano, lavar a louça
+Média
+Casa
+28/11/2022
+1
+[tarefa]
+Terminar trabalho de PDS
+Implementar testes, fazer documentação
+Urgente
+Faculdade
+01/12/2022
+0
+[tarefa]
+Comprar roupas
+Ir no shopping comprar roupas novas
+Baixa
+Compras
+20/11/2022
+0
+[tarefa]
+Assistir série
+Assistir a série Breaking Bad na Netflix
+Baixa
+Casa
+01/12/2022
+1
+[tarefa]
+Estudar para MD
+Estudar para a prova de Matemática Discreta
+Urgente
+Faculdade
+12/12/2022
+0
+[tarefa]
+Tirar nova identidade
+Ir na UAI tirar uma nova identidade
+Urgente
+Casa
+01/12/2022
+0
+[grupo]
+Compras
+Coisas que preciso comprar
+[tarefa]
+Comprar panelas
+Ir no centro comprar panelas
+Média
+Compras
+29/02/2020
+0
+
+[grupo]
+Documentos
+Tarefas relacionadas a documentação

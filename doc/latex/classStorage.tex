@@ -1,0 +1,402 @@
+\hypertarget{classStorage}{}\section{Storage Class Reference}
+\label{classStorage}\index{Storage@{Storage}}
+
+
+{\ttfamily \#include $<$storage.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classStorage_a80ef6af5e4c9fd4424ae16e808d05291}{Storage} ()
+\item 
+string \hyperlink{classStorage_a72004c148e48fdd5fde71db2319762e9}{get\+\_\+nome\+\_\+arquivo} (string usuario)
+\item 
+bool \hyperlink{classStorage_adb9fc5565d70a106da231654e15cf090}{usuario\+\_\+existe} (string usuario)
+\item 
+void \hyperlink{classStorage_a572d1e337404b8819f1565be9689a271}{cria\+\_\+usuario} (string usuario, string senha)
+\item 
+bool \hyperlink{classStorage_af2d39c70a0cd9d63959ab90c9f039dee}{confere\+\_\+senha} (string usuario, string senha)
+\item 
+void \hyperlink{classStorage_a4d149db70dfa838a52ad53bb22555050}{ordena\+\_\+tarefas} ()
+\item 
+void \hyperlink{classStorage_a0b13d6c7e111f6bbeb4c6c03feb532c9}{le\+\_\+tarefa} ()
+\item 
+void \hyperlink{classStorage_a571f009d0dca33811883d381a70ccda5}{le\+\_\+grupo} ()
+\item 
+void \hyperlink{classStorage_aac1b536c28c1bd7a3bef1f0b8738f8d2}{le\+\_\+prioridade} ()
+\item 
+void \hyperlink{classStorage_a2e74fd83ed4bcaad391af72e8cd569c1}{le\+\_\+conteudo} ()
+\item 
+int \hyperlink{classStorage_aa42ca5fe247fbc390ca86c4a05346daa}{get\+\_\+qtd\+\_\+tarefas} ()
+\item 
+int \hyperlink{classStorage_ae92552f01f0e393d4168f6e159a0ca12}{get\+\_\+qtd\+\_\+grupos} ()
+\item 
+int \hyperlink{classStorage_a3ab42001bc5be1d4607fb5b24157c85d}{get\+\_\+qtd\+\_\+prioridades} ()
+\item 
+\hyperlink{classPrioridade}{Prioridade} $\ast$ \hyperlink{classStorage_aeb09b13da8b70a5bc279197d7298de06}{get\+\_\+prioridade} (string nome\+\_\+prioridade)
+\item 
+\hyperlink{classPrioridade}{Prioridade} $\ast$ \hyperlink{classStorage_abc3618c3a0b69ffe6e895cd701b0516e}{get\+\_\+prioridade} (int indice\+\_\+prioridade)
+\item 
+\hyperlink{classGrupo}{Grupo} $\ast$ \hyperlink{classStorage_a1b478e593dd0b18eeb7fc0490b87b362}{get\+\_\+grupo} (string nome\+\_\+grupo)
+\item 
+\hyperlink{classGrupo}{Grupo} $\ast$ \hyperlink{classStorage_af340fa785af6416b6d7ca0eb38ea4be7}{get\+\_\+grupo} (int indice\+\_\+grupo)
+\item 
+\hyperlink{classTarefa}{Tarefa} $\ast$ \hyperlink{classStorage_af8f0367791223137d6249220bceb4d22}{get\+\_\+tarefa} (string titulo\+\_\+tarefa)
+\item 
+\hyperlink{classTarefa}{Tarefa} $\ast$ \hyperlink{classStorage_ae1d09a603b179fe84c9d4e1dfa02e4cb}{get\+\_\+tarefa} (int indice\+\_\+tarefa)
+\item 
+void \hyperlink{classStorage_a128d891f8907c1089e8ac925743b0446}{registra\+\_\+tarefa} (\hyperlink{classTarefa}{Tarefa} $\ast$tarefa)
+\item 
+void \hyperlink{classStorage_a53b5c543a7eb6ca4bb7a83433b67e977}{cria\+\_\+tarefa} (string titulo, string descricao, string prazo, string grupo\+\_\+tarefa, string prioridade\+\_\+tarefa)
+\item 
+void \hyperlink{classStorage_a566777194a365ed00d442ec3d531e146}{registra\+\_\+grupo} (\hyperlink{classGrupo}{Grupo} $\ast$grupo)
+\item 
+void \hyperlink{classStorage_ae08fbaf921bcbbd0b92da839ff930e76}{cria\+\_\+grupo} (string nome\+\_\+etiqueta, string descricao)
+\item 
+void \hyperlink{classStorage_a203e5aad2fc6a8fbd4a23b37c4cb9f3c}{registra\+\_\+prioridade} (\hyperlink{classPrioridade}{Prioridade} $\ast$prioridade)
+\item 
+void \hyperlink{classStorage_a2cb353c0910afe7c69996b51dc65a754}{cria\+\_\+prioridade} (string nome\+\_\+etiqueta, int nivel\+\_\+prioridade)
+\item 
+bool \hyperlink{classStorage_a501b15eb866bfbc27aa968ce96b8ae8b}{tarefa\+\_\+existe} (string titulo\+\_\+tarefa)
+\item 
+bool \hyperlink{classStorage_a7d38af18bdb46b1c8928cdadca13db52}{grupo\+\_\+existe} (string nome\+\_\+grupo)
+\item 
+bool \hyperlink{classStorage_aaa42cd171fb2624c9675e2b220d532e4}{prioridade\+\_\+existe} (string nome\+\_\+prioridade)
+\item 
+void \hyperlink{classStorage_a6164e94fc3a86249dcce0aa66320ad2b}{editar\+\_\+titulo} (int indice\+\_\+tarefa, string novo\+\_\+titulo)
+\item 
+void \hyperlink{classStorage_aca052dc1a570f55746a66f1dd7795354}{editar\+\_\+descricao} (int indice\+\_\+tarefa, string nova\+\_\+descricao)
+\item 
+void \hyperlink{classStorage_a593548cb2b9ee3e570dae32b55140a0c}{editar\+\_\+prazo} (int indice\+\_\+tarefa, string novo\+\_\+prazo)
+\item 
+void \hyperlink{classStorage_a34a852bccbf913731f17a654e6e97c5a}{editar\+\_\+grupo} (int indice\+\_\+tarefa, string novo\+\_\+grupo)
+\item 
+void \hyperlink{classStorage_a15c3a41053de23043a4b16c751515804}{editar\+\_\+prioridade} (int indice\+\_\+tarefa, string nova\+\_\+prioridade)
+\item 
+void \hyperlink{classStorage_a9ffb7a7dad34dc12d3dc4e6808e5f431}{alterar\+\_\+grupo} (int indice\+\_\+grupo, string novo\+\_\+grupo)
+\item 
+void \hyperlink{classStorage_af487be83a5acaf49850f9fff02e0e30f}{alterar\+\_\+des\+\_\+grupo} (int indice\+\_\+grupo, string nova\+\_\+descricao)
+\item 
+void \hyperlink{classStorage_aad0905f797b2112aa95846bbb1714873}{alterar\+\_\+prioridade} (int indice\+\_\+prioridade, string nova\+\_\+prioridade)
+\item 
+void \hyperlink{classStorage_a3e7f675101378565f4f63d799e8408ae}{alterar\+\_\+nivel} (int indice\+\_\+prioridade, int novo\+\_\+nivel)
+\item 
+void \hyperlink{classStorage_acd2ad4c9120d2968cb811be2d96ce7ea}{alterar\+\_\+concluido} (int indice\+\_\+tarefa, bool novo\+\_\+status)
+\item 
+void \hyperlink{classStorage_a2b6c4db3728ad5f6f9787b7af199b4a0}{apaga\+\_\+tarefa} (int indice\+\_\+tarefa)
+\item 
+void \hyperlink{classStorage_abf9179dcd9d27a8e1b5faf74d254f1bb}{apaga\+\_\+grupo} (int indice\+\_\+grupo)
+\item 
+void \hyperlink{classStorage_ac05b88b868646f514f2c8c114c28ce60}{apaga\+\_\+prioridade} (int indice\+\_\+prioridade)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+fstream \hyperlink{classStorage_ad9934ed8b6423a91135819a7f301ffba}{\+\_\+file}
+\item 
+bool \hyperlink{classStorage_afb88caad0d6b81083c03169d39718f81}{\+\_\+logado}
+\item 
+string \hyperlink{classStorage_a2c715507a5c7b44e912a827faf310dc8}{\+\_\+usuario\+\_\+logado}
+\item 
+vector$<$ \hyperlink{classTarefa}{Tarefa} $\ast$ $>$ \hyperlink{classStorage_a289eb400729d4db505aa427cdcd83fdf}{\+\_\+tarefas}
+\item 
+vector$<$ \hyperlink{classGrupo}{Grupo} $\ast$ $>$ \hyperlink{classStorage_a4bd9a86ddbe7dd8d4f2a2b0fe60255e6}{\+\_\+grupos}
+\item 
+vector$<$ \hyperlink{classPrioridade}{Prioridade} $\ast$ $>$ \hyperlink{classStorage_a1cd2e4e622c1e7988c8bc52f2a56f869}{\+\_\+prioridades}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classStorage_a80ef6af5e4c9fd4424ae16e808d05291}\label{classStorage_a80ef6af5e4c9fd4424ae16e808d05291}} 
+\index{Storage@{Storage}!Storage@{Storage}}
+\index{Storage@{Storage}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{Storage()}{Storage()}}
+{\footnotesize\ttfamily Storage\+::\+Storage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classStorage_acd2ad4c9120d2968cb811be2d96ce7ea}\label{classStorage_acd2ad4c9120d2968cb811be2d96ce7ea}} 
+\index{Storage@{Storage}!alterar\+\_\+concluido@{alterar\+\_\+concluido}}
+\index{alterar\+\_\+concluido@{alterar\+\_\+concluido}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{alterar\+\_\+concluido()}{alterar\_concluido()}}
+{\footnotesize\ttfamily void Storage\+::alterar\+\_\+concluido (\begin{DoxyParamCaption}\item[{int}]{indice\+\_\+tarefa,  }\item[{bool}]{novo\+\_\+status }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_af487be83a5acaf49850f9fff02e0e30f}\label{classStorage_af487be83a5acaf49850f9fff02e0e30f}} 
+\index{Storage@{Storage}!alterar\+\_\+des\+\_\+grupo@{alterar\+\_\+des\+\_\+grupo}}
+\index{alterar\+\_\+des\+\_\+grupo@{alterar\+\_\+des\+\_\+grupo}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{alterar\+\_\+des\+\_\+grupo()}{alterar\_des\_grupo()}}
+{\footnotesize\ttfamily void Storage\+::alterar\+\_\+des\+\_\+grupo (\begin{DoxyParamCaption}\item[{int}]{indice\+\_\+grupo,  }\item[{string}]{nova\+\_\+descricao }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_a9ffb7a7dad34dc12d3dc4e6808e5f431}\label{classStorage_a9ffb7a7dad34dc12d3dc4e6808e5f431}} 
+\index{Storage@{Storage}!alterar\+\_\+grupo@{alterar\+\_\+grupo}}
+\index{alterar\+\_\+grupo@{alterar\+\_\+grupo}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{alterar\+\_\+grupo()}{alterar\_grupo()}}
+{\footnotesize\ttfamily void Storage\+::alterar\+\_\+grupo (\begin{DoxyParamCaption}\item[{int}]{indice\+\_\+grupo,  }\item[{string}]{novo\+\_\+grupo }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_a3e7f675101378565f4f63d799e8408ae}\label{classStorage_a3e7f675101378565f4f63d799e8408ae}} 
+\index{Storage@{Storage}!alterar\+\_\+nivel@{alterar\+\_\+nivel}}
+\index{alterar\+\_\+nivel@{alterar\+\_\+nivel}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{alterar\+\_\+nivel()}{alterar\_nivel()}}
+{\footnotesize\ttfamily void Storage\+::alterar\+\_\+nivel (\begin{DoxyParamCaption}\item[{int}]{indice\+\_\+prioridade,  }\item[{int}]{novo\+\_\+nivel }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_aad0905f797b2112aa95846bbb1714873}\label{classStorage_aad0905f797b2112aa95846bbb1714873}} 
+\index{Storage@{Storage}!alterar\+\_\+prioridade@{alterar\+\_\+prioridade}}
+\index{alterar\+\_\+prioridade@{alterar\+\_\+prioridade}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{alterar\+\_\+prioridade()}{alterar\_prioridade()}}
+{\footnotesize\ttfamily void Storage\+::alterar\+\_\+prioridade (\begin{DoxyParamCaption}\item[{int}]{indice\+\_\+prioridade,  }\item[{string}]{nova\+\_\+prioridade }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_abf9179dcd9d27a8e1b5faf74d254f1bb}\label{classStorage_abf9179dcd9d27a8e1b5faf74d254f1bb}} 
+\index{Storage@{Storage}!apaga\+\_\+grupo@{apaga\+\_\+grupo}}
+\index{apaga\+\_\+grupo@{apaga\+\_\+grupo}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{apaga\+\_\+grupo()}{apaga\_grupo()}}
+{\footnotesize\ttfamily void Storage\+::apaga\+\_\+grupo (\begin{DoxyParamCaption}\item[{int}]{indice\+\_\+grupo }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_ac05b88b868646f514f2c8c114c28ce60}\label{classStorage_ac05b88b868646f514f2c8c114c28ce60}} 
+\index{Storage@{Storage}!apaga\+\_\+prioridade@{apaga\+\_\+prioridade}}
+\index{apaga\+\_\+prioridade@{apaga\+\_\+prioridade}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{apaga\+\_\+prioridade()}{apaga\_prioridade()}}
+{\footnotesize\ttfamily void Storage\+::apaga\+\_\+prioridade (\begin{DoxyParamCaption}\item[{int}]{indice\+\_\+prioridade }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_a2b6c4db3728ad5f6f9787b7af199b4a0}\label{classStorage_a2b6c4db3728ad5f6f9787b7af199b4a0}} 
+\index{Storage@{Storage}!apaga\+\_\+tarefa@{apaga\+\_\+tarefa}}
+\index{apaga\+\_\+tarefa@{apaga\+\_\+tarefa}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{apaga\+\_\+tarefa()}{apaga\_tarefa()}}
+{\footnotesize\ttfamily void Storage\+::apaga\+\_\+tarefa (\begin{DoxyParamCaption}\item[{int}]{indice\+\_\+tarefa }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_af2d39c70a0cd9d63959ab90c9f039dee}\label{classStorage_af2d39c70a0cd9d63959ab90c9f039dee}} 
+\index{Storage@{Storage}!confere\+\_\+senha@{confere\+\_\+senha}}
+\index{confere\+\_\+senha@{confere\+\_\+senha}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{confere\+\_\+senha()}{confere\_senha()}}
+{\footnotesize\ttfamily bool Storage\+::confere\+\_\+senha (\begin{DoxyParamCaption}\item[{string}]{usuario,  }\item[{string}]{senha }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_ae08fbaf921bcbbd0b92da839ff930e76}\label{classStorage_ae08fbaf921bcbbd0b92da839ff930e76}} 
+\index{Storage@{Storage}!cria\+\_\+grupo@{cria\+\_\+grupo}}
+\index{cria\+\_\+grupo@{cria\+\_\+grupo}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{cria\+\_\+grupo()}{cria\_grupo()}}
+{\footnotesize\ttfamily void Storage\+::cria\+\_\+grupo (\begin{DoxyParamCaption}\item[{string}]{nome\+\_\+etiqueta,  }\item[{string}]{descricao }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_a2cb353c0910afe7c69996b51dc65a754}\label{classStorage_a2cb353c0910afe7c69996b51dc65a754}} 
+\index{Storage@{Storage}!cria\+\_\+prioridade@{cria\+\_\+prioridade}}
+\index{cria\+\_\+prioridade@{cria\+\_\+prioridade}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{cria\+\_\+prioridade()}{cria\_prioridade()}}
+{\footnotesize\ttfamily void Storage\+::cria\+\_\+prioridade (\begin{DoxyParamCaption}\item[{string}]{nome\+\_\+etiqueta,  }\item[{int}]{nivel\+\_\+prioridade }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_a53b5c543a7eb6ca4bb7a83433b67e977}\label{classStorage_a53b5c543a7eb6ca4bb7a83433b67e977}} 
+\index{Storage@{Storage}!cria\+\_\+tarefa@{cria\+\_\+tarefa}}
+\index{cria\+\_\+tarefa@{cria\+\_\+tarefa}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{cria\+\_\+tarefa()}{cria\_tarefa()}}
+{\footnotesize\ttfamily void Storage\+::cria\+\_\+tarefa (\begin{DoxyParamCaption}\item[{string}]{titulo,  }\item[{string}]{descricao,  }\item[{string}]{prazo,  }\item[{string}]{grupo\+\_\+tarefa,  }\item[{string}]{prioridade\+\_\+tarefa }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_a572d1e337404b8819f1565be9689a271}\label{classStorage_a572d1e337404b8819f1565be9689a271}} 
+\index{Storage@{Storage}!cria\+\_\+usuario@{cria\+\_\+usuario}}
+\index{cria\+\_\+usuario@{cria\+\_\+usuario}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{cria\+\_\+usuario()}{cria\_usuario()}}
+{\footnotesize\ttfamily void Storage\+::cria\+\_\+usuario (\begin{DoxyParamCaption}\item[{string}]{usuario,  }\item[{string}]{senha }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_aca052dc1a570f55746a66f1dd7795354}\label{classStorage_aca052dc1a570f55746a66f1dd7795354}} 
+\index{Storage@{Storage}!editar\+\_\+descricao@{editar\+\_\+descricao}}
+\index{editar\+\_\+descricao@{editar\+\_\+descricao}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{editar\+\_\+descricao()}{editar\_descricao()}}
+{\footnotesize\ttfamily void Storage\+::editar\+\_\+descricao (\begin{DoxyParamCaption}\item[{int}]{indice\+\_\+tarefa,  }\item[{string}]{nova\+\_\+descricao }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_a34a852bccbf913731f17a654e6e97c5a}\label{classStorage_a34a852bccbf913731f17a654e6e97c5a}} 
+\index{Storage@{Storage}!editar\+\_\+grupo@{editar\+\_\+grupo}}
+\index{editar\+\_\+grupo@{editar\+\_\+grupo}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{editar\+\_\+grupo()}{editar\_grupo()}}
+{\footnotesize\ttfamily void Storage\+::editar\+\_\+grupo (\begin{DoxyParamCaption}\item[{int}]{indice\+\_\+tarefa,  }\item[{string}]{novo\+\_\+grupo }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_a593548cb2b9ee3e570dae32b55140a0c}\label{classStorage_a593548cb2b9ee3e570dae32b55140a0c}} 
+\index{Storage@{Storage}!editar\+\_\+prazo@{editar\+\_\+prazo}}
+\index{editar\+\_\+prazo@{editar\+\_\+prazo}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{editar\+\_\+prazo()}{editar\_prazo()}}
+{\footnotesize\ttfamily void Storage\+::editar\+\_\+prazo (\begin{DoxyParamCaption}\item[{int}]{indice\+\_\+tarefa,  }\item[{string}]{novo\+\_\+prazo }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_a15c3a41053de23043a4b16c751515804}\label{classStorage_a15c3a41053de23043a4b16c751515804}} 
+\index{Storage@{Storage}!editar\+\_\+prioridade@{editar\+\_\+prioridade}}
+\index{editar\+\_\+prioridade@{editar\+\_\+prioridade}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{editar\+\_\+prioridade()}{editar\_prioridade()}}
+{\footnotesize\ttfamily void Storage\+::editar\+\_\+prioridade (\begin{DoxyParamCaption}\item[{int}]{indice\+\_\+tarefa,  }\item[{string}]{nova\+\_\+prioridade }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_a6164e94fc3a86249dcce0aa66320ad2b}\label{classStorage_a6164e94fc3a86249dcce0aa66320ad2b}} 
+\index{Storage@{Storage}!editar\+\_\+titulo@{editar\+\_\+titulo}}
+\index{editar\+\_\+titulo@{editar\+\_\+titulo}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{editar\+\_\+titulo()}{editar\_titulo()}}
+{\footnotesize\ttfamily void Storage\+::editar\+\_\+titulo (\begin{DoxyParamCaption}\item[{int}]{indice\+\_\+tarefa,  }\item[{string}]{novo\+\_\+titulo }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_a1b478e593dd0b18eeb7fc0490b87b362}\label{classStorage_a1b478e593dd0b18eeb7fc0490b87b362}} 
+\index{Storage@{Storage}!get\+\_\+grupo@{get\+\_\+grupo}}
+\index{get\+\_\+grupo@{get\+\_\+grupo}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{get\+\_\+grupo()}{get\_grupo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classGrupo}{Grupo}$\ast$ Storage\+::get\+\_\+grupo (\begin{DoxyParamCaption}\item[{string}]{nome\+\_\+grupo }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_af340fa785af6416b6d7ca0eb38ea4be7}\label{classStorage_af340fa785af6416b6d7ca0eb38ea4be7}} 
+\index{Storage@{Storage}!get\+\_\+grupo@{get\+\_\+grupo}}
+\index{get\+\_\+grupo@{get\+\_\+grupo}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{get\+\_\+grupo()}{get\_grupo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classGrupo}{Grupo}$\ast$ Storage\+::get\+\_\+grupo (\begin{DoxyParamCaption}\item[{int}]{indice\+\_\+grupo }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_a72004c148e48fdd5fde71db2319762e9}\label{classStorage_a72004c148e48fdd5fde71db2319762e9}} 
+\index{Storage@{Storage}!get\+\_\+nome\+\_\+arquivo@{get\+\_\+nome\+\_\+arquivo}}
+\index{get\+\_\+nome\+\_\+arquivo@{get\+\_\+nome\+\_\+arquivo}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{get\+\_\+nome\+\_\+arquivo()}{get\_nome\_arquivo()}}
+{\footnotesize\ttfamily string Storage\+::get\+\_\+nome\+\_\+arquivo (\begin{DoxyParamCaption}\item[{string}]{usuario }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_aeb09b13da8b70a5bc279197d7298de06}\label{classStorage_aeb09b13da8b70a5bc279197d7298de06}} 
+\index{Storage@{Storage}!get\+\_\+prioridade@{get\+\_\+prioridade}}
+\index{get\+\_\+prioridade@{get\+\_\+prioridade}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{get\+\_\+prioridade()}{get\_prioridade()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classPrioridade}{Prioridade}$\ast$ Storage\+::get\+\_\+prioridade (\begin{DoxyParamCaption}\item[{string}]{nome\+\_\+prioridade }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_abc3618c3a0b69ffe6e895cd701b0516e}\label{classStorage_abc3618c3a0b69ffe6e895cd701b0516e}} 
+\index{Storage@{Storage}!get\+\_\+prioridade@{get\+\_\+prioridade}}
+\index{get\+\_\+prioridade@{get\+\_\+prioridade}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{get\+\_\+prioridade()}{get\_prioridade()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classPrioridade}{Prioridade}$\ast$ Storage\+::get\+\_\+prioridade (\begin{DoxyParamCaption}\item[{int}]{indice\+\_\+prioridade }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_ae92552f01f0e393d4168f6e159a0ca12}\label{classStorage_ae92552f01f0e393d4168f6e159a0ca12}} 
+\index{Storage@{Storage}!get\+\_\+qtd\+\_\+grupos@{get\+\_\+qtd\+\_\+grupos}}
+\index{get\+\_\+qtd\+\_\+grupos@{get\+\_\+qtd\+\_\+grupos}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{get\+\_\+qtd\+\_\+grupos()}{get\_qtd\_grupos()}}
+{\footnotesize\ttfamily int Storage\+::get\+\_\+qtd\+\_\+grupos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_a3ab42001bc5be1d4607fb5b24157c85d}\label{classStorage_a3ab42001bc5be1d4607fb5b24157c85d}} 
+\index{Storage@{Storage}!get\+\_\+qtd\+\_\+prioridades@{get\+\_\+qtd\+\_\+prioridades}}
+\index{get\+\_\+qtd\+\_\+prioridades@{get\+\_\+qtd\+\_\+prioridades}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{get\+\_\+qtd\+\_\+prioridades()}{get\_qtd\_prioridades()}}
+{\footnotesize\ttfamily int Storage\+::get\+\_\+qtd\+\_\+prioridades (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_aa42ca5fe247fbc390ca86c4a05346daa}\label{classStorage_aa42ca5fe247fbc390ca86c4a05346daa}} 
+\index{Storage@{Storage}!get\+\_\+qtd\+\_\+tarefas@{get\+\_\+qtd\+\_\+tarefas}}
+\index{get\+\_\+qtd\+\_\+tarefas@{get\+\_\+qtd\+\_\+tarefas}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{get\+\_\+qtd\+\_\+tarefas()}{get\_qtd\_tarefas()}}
+{\footnotesize\ttfamily int Storage\+::get\+\_\+qtd\+\_\+tarefas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_af8f0367791223137d6249220bceb4d22}\label{classStorage_af8f0367791223137d6249220bceb4d22}} 
+\index{Storage@{Storage}!get\+\_\+tarefa@{get\+\_\+tarefa}}
+\index{get\+\_\+tarefa@{get\+\_\+tarefa}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{get\+\_\+tarefa()}{get\_tarefa()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classTarefa}{Tarefa}$\ast$ Storage\+::get\+\_\+tarefa (\begin{DoxyParamCaption}\item[{string}]{titulo\+\_\+tarefa }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_ae1d09a603b179fe84c9d4e1dfa02e4cb}\label{classStorage_ae1d09a603b179fe84c9d4e1dfa02e4cb}} 
+\index{Storage@{Storage}!get\+\_\+tarefa@{get\+\_\+tarefa}}
+\index{get\+\_\+tarefa@{get\+\_\+tarefa}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{get\+\_\+tarefa()}{get\_tarefa()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classTarefa}{Tarefa}$\ast$ Storage\+::get\+\_\+tarefa (\begin{DoxyParamCaption}\item[{int}]{indice\+\_\+tarefa }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_a7d38af18bdb46b1c8928cdadca13db52}\label{classStorage_a7d38af18bdb46b1c8928cdadca13db52}} 
+\index{Storage@{Storage}!grupo\+\_\+existe@{grupo\+\_\+existe}}
+\index{grupo\+\_\+existe@{grupo\+\_\+existe}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{grupo\+\_\+existe()}{grupo\_existe()}}
+{\footnotesize\ttfamily bool Storage\+::grupo\+\_\+existe (\begin{DoxyParamCaption}\item[{string}]{nome\+\_\+grupo }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_a2e74fd83ed4bcaad391af72e8cd569c1}\label{classStorage_a2e74fd83ed4bcaad391af72e8cd569c1}} 
+\index{Storage@{Storage}!le\+\_\+conteudo@{le\+\_\+conteudo}}
+\index{le\+\_\+conteudo@{le\+\_\+conteudo}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{le\+\_\+conteudo()}{le\_conteudo()}}
+{\footnotesize\ttfamily void Storage\+::le\+\_\+conteudo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_a571f009d0dca33811883d381a70ccda5}\label{classStorage_a571f009d0dca33811883d381a70ccda5}} 
+\index{Storage@{Storage}!le\+\_\+grupo@{le\+\_\+grupo}}
+\index{le\+\_\+grupo@{le\+\_\+grupo}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{le\+\_\+grupo()}{le\_grupo()}}
+{\footnotesize\ttfamily void Storage\+::le\+\_\+grupo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_aac1b536c28c1bd7a3bef1f0b8738f8d2}\label{classStorage_aac1b536c28c1bd7a3bef1f0b8738f8d2}} 
+\index{Storage@{Storage}!le\+\_\+prioridade@{le\+\_\+prioridade}}
+\index{le\+\_\+prioridade@{le\+\_\+prioridade}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{le\+\_\+prioridade()}{le\_prioridade()}}
+{\footnotesize\ttfamily void Storage\+::le\+\_\+prioridade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_a0b13d6c7e111f6bbeb4c6c03feb532c9}\label{classStorage_a0b13d6c7e111f6bbeb4c6c03feb532c9}} 
+\index{Storage@{Storage}!le\+\_\+tarefa@{le\+\_\+tarefa}}
+\index{le\+\_\+tarefa@{le\+\_\+tarefa}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{le\+\_\+tarefa()}{le\_tarefa()}}
+{\footnotesize\ttfamily void Storage\+::le\+\_\+tarefa (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_a4d149db70dfa838a52ad53bb22555050}\label{classStorage_a4d149db70dfa838a52ad53bb22555050}} 
+\index{Storage@{Storage}!ordena\+\_\+tarefas@{ordena\+\_\+tarefas}}
+\index{ordena\+\_\+tarefas@{ordena\+\_\+tarefas}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{ordena\+\_\+tarefas()}{ordena\_tarefas()}}
+{\footnotesize\ttfamily void Storage\+::ordena\+\_\+tarefas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_aaa42cd171fb2624c9675e2b220d532e4}\label{classStorage_aaa42cd171fb2624c9675e2b220d532e4}} 
+\index{Storage@{Storage}!prioridade\+\_\+existe@{prioridade\+\_\+existe}}
+\index{prioridade\+\_\+existe@{prioridade\+\_\+existe}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{prioridade\+\_\+existe()}{prioridade\_existe()}}
+{\footnotesize\ttfamily bool Storage\+::prioridade\+\_\+existe (\begin{DoxyParamCaption}\item[{string}]{nome\+\_\+prioridade }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_a566777194a365ed00d442ec3d531e146}\label{classStorage_a566777194a365ed00d442ec3d531e146}} 
+\index{Storage@{Storage}!registra\+\_\+grupo@{registra\+\_\+grupo}}
+\index{registra\+\_\+grupo@{registra\+\_\+grupo}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{registra\+\_\+grupo()}{registra\_grupo()}}
+{\footnotesize\ttfamily void Storage\+::registra\+\_\+grupo (\begin{DoxyParamCaption}\item[{\hyperlink{classGrupo}{Grupo} $\ast$}]{grupo }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_a203e5aad2fc6a8fbd4a23b37c4cb9f3c}\label{classStorage_a203e5aad2fc6a8fbd4a23b37c4cb9f3c}} 
+\index{Storage@{Storage}!registra\+\_\+prioridade@{registra\+\_\+prioridade}}
+\index{registra\+\_\+prioridade@{registra\+\_\+prioridade}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{registra\+\_\+prioridade()}{registra\_prioridade()}}
+{\footnotesize\ttfamily void Storage\+::registra\+\_\+prioridade (\begin{DoxyParamCaption}\item[{\hyperlink{classPrioridade}{Prioridade} $\ast$}]{prioridade }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_a128d891f8907c1089e8ac925743b0446}\label{classStorage_a128d891f8907c1089e8ac925743b0446}} 
+\index{Storage@{Storage}!registra\+\_\+tarefa@{registra\+\_\+tarefa}}
+\index{registra\+\_\+tarefa@{registra\+\_\+tarefa}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{registra\+\_\+tarefa()}{registra\_tarefa()}}
+{\footnotesize\ttfamily void Storage\+::registra\+\_\+tarefa (\begin{DoxyParamCaption}\item[{\hyperlink{classTarefa}{Tarefa} $\ast$}]{tarefa }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_a501b15eb866bfbc27aa968ce96b8ae8b}\label{classStorage_a501b15eb866bfbc27aa968ce96b8ae8b}} 
+\index{Storage@{Storage}!tarefa\+\_\+existe@{tarefa\+\_\+existe}}
+\index{tarefa\+\_\+existe@{tarefa\+\_\+existe}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{tarefa\+\_\+existe()}{tarefa\_existe()}}
+{\footnotesize\ttfamily bool Storage\+::tarefa\+\_\+existe (\begin{DoxyParamCaption}\item[{string}]{titulo\+\_\+tarefa }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStorage_adb9fc5565d70a106da231654e15cf090}\label{classStorage_adb9fc5565d70a106da231654e15cf090}} 
+\index{Storage@{Storage}!usuario\+\_\+existe@{usuario\+\_\+existe}}
+\index{usuario\+\_\+existe@{usuario\+\_\+existe}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{usuario\+\_\+existe()}{usuario\_existe()}}
+{\footnotesize\ttfamily bool Storage\+::usuario\+\_\+existe (\begin{DoxyParamCaption}\item[{string}]{usuario }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classStorage_ad9934ed8b6423a91135819a7f301ffba}\label{classStorage_ad9934ed8b6423a91135819a7f301ffba}} 
+\index{Storage@{Storage}!\+\_\+file@{\+\_\+file}}
+\index{\+\_\+file@{\+\_\+file}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{\+\_\+file}{\_file}}
+{\footnotesize\ttfamily fstream Storage\+::\+\_\+file\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classStorage_a4bd9a86ddbe7dd8d4f2a2b0fe60255e6}\label{classStorage_a4bd9a86ddbe7dd8d4f2a2b0fe60255e6}} 
+\index{Storage@{Storage}!\+\_\+grupos@{\+\_\+grupos}}
+\index{\+\_\+grupos@{\+\_\+grupos}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{\+\_\+grupos}{\_grupos}}
+{\footnotesize\ttfamily vector$<$\hyperlink{classGrupo}{Grupo}$\ast$$>$ Storage\+::\+\_\+grupos\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classStorage_afb88caad0d6b81083c03169d39718f81}\label{classStorage_afb88caad0d6b81083c03169d39718f81}} 
+\index{Storage@{Storage}!\+\_\+logado@{\+\_\+logado}}
+\index{\+\_\+logado@{\+\_\+logado}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{\+\_\+logado}{\_logado}}
+{\footnotesize\ttfamily bool Storage\+::\+\_\+logado\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classStorage_a1cd2e4e622c1e7988c8bc52f2a56f869}\label{classStorage_a1cd2e4e622c1e7988c8bc52f2a56f869}} 
+\index{Storage@{Storage}!\+\_\+prioridades@{\+\_\+prioridades}}
+\index{\+\_\+prioridades@{\+\_\+prioridades}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{\+\_\+prioridades}{\_prioridades}}
+{\footnotesize\ttfamily vector$<$\hyperlink{classPrioridade}{Prioridade}$\ast$$>$ Storage\+::\+\_\+prioridades\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classStorage_a289eb400729d4db505aa427cdcd83fdf}\label{classStorage_a289eb400729d4db505aa427cdcd83fdf}} 
+\index{Storage@{Storage}!\+\_\+tarefas@{\+\_\+tarefas}}
+\index{\+\_\+tarefas@{\+\_\+tarefas}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{\+\_\+tarefas}{\_tarefas}}
+{\footnotesize\ttfamily vector$<$\hyperlink{classTarefa}{Tarefa}$\ast$$>$ Storage\+::\+\_\+tarefas\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classStorage_a2c715507a5c7b44e912a827faf310dc8}\label{classStorage_a2c715507a5c7b44e912a827faf310dc8}} 
+\index{Storage@{Storage}!\+\_\+usuario\+\_\+logado@{\+\_\+usuario\+\_\+logado}}
+\index{\+\_\+usuario\+\_\+logado@{\+\_\+usuario\+\_\+logado}!Storage@{Storage}}
+\subsubsection{\texorpdfstring{\+\_\+usuario\+\_\+logado}{\_usuario\_logado}}
+{\footnotesize\ttfamily string Storage\+::\+\_\+usuario\+\_\+logado\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{storage_8hpp}{storage.\+hpp}\end{DoxyCompactItemize}

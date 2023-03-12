@@ -1,0 +1,530 @@
+\hypertarget{classTerminal}{}\section{Terminal Class Reference}
+\label{classTerminal}\index{Terminal@{Terminal}}
+
+
+{\ttfamily \#include $<$terminal.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTerminal_aa448509b5aa1ece53c3d86385655be0e}{Terminal} ()
+\item 
+bool \hyperlink{classTerminal_aed7124f0bc24d4b77971f16d2f186a9b}{print} (string msg, bool quebra\+\_\+de\+\_\+linha)
+\item 
+bool \hyperlink{classTerminal_ac93c6cd6c16b785783ad21ff7bf80ef6}{print\+\_\+sucesso} (string msg\+\_\+sucesso)
+\item 
+bool \hyperlink{classTerminal_af5e724ead0f64b07a48d87a9942997e8}{print\+\_\+erro} (string msg\+\_\+erro)
+\item 
+bool \hyperlink{classTerminal_ab0f81f0dd06888554d817481140c953d}{print\+\_\+centralizado} (string texto)
+\item 
+bool \hyperlink{classTerminal_a9bb92733eb900a01a88c4e2eee17d938}{print\+\_\+direita} (string texto)
+\item 
+bool \hyperlink{classTerminal_a7aa126267c7e71ed99082884610496c9}{limpa\+\_\+terminal} ()
+\item 
+string \hyperlink{classTerminal_af3b082b98755b9f60f02315e5d207538}{espaco\+\_\+vertical} ()
+\item 
+string \hyperlink{classTerminal_a74aa95517ba338132e791a2aefb77b7a}{espaco\+\_\+horizontal} ()
+\item 
+string \hyperlink{classTerminal_a55827d690f15a0b401d6ee01ae710020}{get\+\_\+entrada} ()
+\item 
+bool \hyperlink{classTerminal_a46650fa9443239037a1a75afd963e51b}{login\+\_\+ou\+\_\+registre} ()
+\item 
+bool \hyperlink{classTerminal_a7c4d6a98c2ae96474e6745ce0c18d459}{cria\+\_\+usuario} ()
+\item 
+bool \hyperlink{classTerminal_a83ec130f3b19df9b382d99484669a509}{faz\+\_\+login} ()
+\item 
+bool \hyperlink{classTerminal_af5853d7279661f75d23fb44ade174da2}{tem\+\_\+tarefas} ()
+\item 
+int \hyperlink{classTerminal_a32ee131eb01ec417804965d183699f78}{get\+\_\+qtd\+\_\+paginas} ()
+\item 
+int \hyperlink{classTerminal_a4e72c12f3a0e6e3028cd0a87253966ca}{get\+\_\+qtd\+\_\+paginas\+\_\+grupos} ()
+\item 
+int \hyperlink{classTerminal_a0ebaf26f7d680bcd1412c3c692c3b7b2}{get\+\_\+qtd\+\_\+paginas\+\_\+prd} ()
+\item 
+bool \hyperlink{classTerminal_ad61f4e49e2c7aad146ae193920c8e2e8}{print\+\_\+ajuda} ()
+\item 
+bool \hyperlink{classTerminal_a4b1699a246eedcad0762c074c27ed3dc}{print\+\_\+paginacao} (int pagina\+\_\+atual)
+\item 
+bool \hyperlink{classTerminal_a33b9112ee605314c941413afd3d045fc}{print\+\_\+paginacao\+\_\+grupos} (int pagina\+\_\+atual)
+\item 
+bool \hyperlink{classTerminal_af7c7bbdbe5c28a4e797a42b4247ff121}{print\+\_\+paginacao\+\_\+prd} (int pagina\+\_\+atual)
+\item 
+bool \hyperlink{classTerminal_ab077ac695729b722e0c0e07f8508aa55}{print\+\_\+cabecalho} ()
+\item 
+bool \hyperlink{classTerminal_ae90c7487c329e9210234456f4e2723d9}{print\+\_\+cabecalho\+\_\+grupo} ()
+\item 
+bool \hyperlink{classTerminal_aeb95c3c6aa25ee2fa7898ed144ab47b5}{print\+\_\+cabecalho\+\_\+prd} ()
+\item 
+bool \hyperlink{classTerminal_a661628dafc3f0227f4acb58c32c5090c}{pagina\+\_\+existe} (int pagina)
+\item 
+bool \hyperlink{classTerminal_af95bd1d7646ccffb64be117d5d16d4e5}{pagina\+\_\+grupo\+\_\+existe} (int pagina)
+\item 
+bool \hyperlink{classTerminal_a6ff33aa1b1b2a2120542cac16f81c4b5}{pagina\+\_\+prd\+\_\+existe} (int pagina)
+\item 
+bool \hyperlink{classTerminal_a3633af9ee180a1a129f9c33c1a3aa3b9}{print\+\_\+tarefa} (\hyperlink{classTarefa}{Tarefa} $\ast$tarefa, int id)
+\item 
+bool \hyperlink{classTerminal_a99b5e852d3339543af8d740422c0f58b}{print\+\_\+tarefas} (int pagina)
+\item 
+bool \hyperlink{classTerminal_af2b2089477ced07e4acf9e8acafcd2f4}{exibe\+\_\+tarefa} (string comando)
+\item 
+bool \hyperlink{classTerminal_ae0951f8966234d5ec902112368a7c4a8}{print\+\_\+grupo} (\hyperlink{classGrupo}{Grupo} $\ast$grupo, int id)
+\item 
+bool \hyperlink{classTerminal_a1b8493b5a3ad18fe1f0ee784a70c6d77}{print\+\_\+grupos} (int pagina)
+\item 
+bool \hyperlink{classTerminal_a1065a9f3083675e569a9ea49a07e5036}{print\+\_\+prioridade} (\hyperlink{classPrioridade}{Prioridade} $\ast$prioridade, int id)
+\item 
+bool \hyperlink{classTerminal_a2c636ad455aa6e8f4ee0fc57be74fb09}{print\+\_\+prioridades} (int pagina)
+\item 
+bool \hyperlink{classTerminal_a04c02a475ddfd34ab7ac354ef35b8878}{prazo\+\_\+valido} (string prazo)
+\item 
+bool \hyperlink{classTerminal_a05c347f323568a234ea3e12bc0c64315}{nova\+\_\+tarefa} ()
+\item 
+bool \hyperlink{classTerminal_a80591e4cc7da1010d922a4ffca469eba}{novo\+\_\+grupo} ()
+\item 
+bool \hyperlink{classTerminal_a15369b06a58cb3b06bfac023e21a2e6e}{nova\+\_\+prioridade} ()
+\item 
+bool \hyperlink{classTerminal_ae01a6f6ca1a48721d6327051e6fe6a22}{editar\+\_\+titulo\+\_\+tarefa} (string comando)
+\item 
+bool \hyperlink{classTerminal_a1700bd13d74d5b81ff870bfccfc20e86}{editar\+\_\+desc\+\_\+tarefa} (string comando)
+\item 
+bool \hyperlink{classTerminal_ae0ddc1e5b294f6fbe62a5a70c267cb72}{editar\+\_\+prazo\+\_\+tarefa} (string comando)
+\item 
+bool \hyperlink{classTerminal_a08b680a0760ae5fbab03fa2098250c7b}{editar\+\_\+grupo\+\_\+tarefa} (string comando)
+\item 
+bool \hyperlink{classTerminal_abeeb442470656d2b6a4bf90079c35d74}{editar\+\_\+prd\+\_\+tarefa} (string comando)
+\item 
+bool \hyperlink{classTerminal_a63b9f303409fd5e787b7918b3d462e51}{marcar\+\_\+concluida} (string comando)
+\item 
+bool \hyperlink{classTerminal_aad539ca6e1d50e024ec4256bdf3b0e00}{desmarcar\+\_\+concluida} (string comando)
+\item 
+bool \hyperlink{classTerminal_a542446375398d23c429e38ce92ef2855}{editar\+\_\+nome\+\_\+grupo} (string comando)
+\item 
+bool \hyperlink{classTerminal_a318e04ea1bea16073451b6014fcde53e}{editar\+\_\+desc\+\_\+grupo} (string comando)
+\item 
+bool \hyperlink{classTerminal_a2d1957dcc0e404c16073f9c15fa2508e}{editar\+\_\+nome\+\_\+prd} (string comando)
+\item 
+bool \hyperlink{classTerminal_ad8941034607b656e5dcd279ce35a3f54}{editar\+\_\+nivel\+\_\+prd} (string comando)
+\item 
+bool \hyperlink{classTerminal_a207ca524c3b42aeb03d8e4aca1eee4a0}{deletar\+\_\+tarefa} (string comando)
+\item 
+bool \hyperlink{classTerminal_a915f2d35fcd5452b57af7af9af496c1e}{deletar\+\_\+grupo} (string comando)
+\item 
+bool \hyperlink{classTerminal_ac3e557f2c92b1f3a28e7a1363cd002a5}{deletar\+\_\+prioridade} (string comando)
+\item 
+void \hyperlink{classTerminal_ab5fabe06475207244e238a860e2aa469}{logout} ()
+\item 
+bool \hyperlink{classTerminal_a7447fa08bbace168d7e3043d13ad3fa4}{pede\+\_\+comando} ()
+\item 
+bool \hyperlink{classTerminal_aae5f31b6a4f5f1d7e7dcbbb438408fb4}{inicia} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classTerminal_ac8f19b80b3c009efad6017cf5236510a}{\+\_\+largura\+\_\+terminal}
+\item 
+int \hyperlink{classTerminal_ac23f70e4a6bfe74cb430d10ce14f7d69}{\+\_\+altura\+\_\+terminal}
+\item 
+int \hyperlink{classTerminal_aa11effca90a9379eeee9776a41a79456}{\+\_\+padding\+\_\+y}
+\item 
+int \hyperlink{classTerminal_ac50acd9b920ff6d6759f953527869ea0}{\+\_\+padding\+\_\+x}
+\item 
+unsigned int \hyperlink{classTerminal_a51ad09d06d4ca9f3204d266d94c8fdcc}{\+\_\+tarefas\+\_\+por\+\_\+pagina}
+\item 
+\hyperlink{classUsuario}{Usuario} \hyperlink{classTerminal_aa5f996ee61173aaacf9b843fa211426e}{\+\_\+usuario}
+\item 
+\hyperlink{classStorage}{Storage} $\ast$ \hyperlink{classTerminal_a13bab737b1972d98bc4c8912fad52b2a}{\+\_\+storage}
+\item 
+unsigned int \hyperlink{classTerminal_ae16d3b2e118315e028a06cea51e1a5ac}{\+\_\+pagina\+\_\+atual}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTerminal_aa448509b5aa1ece53c3d86385655be0e}\label{classTerminal_aa448509b5aa1ece53c3d86385655be0e}} 
+\index{Terminal@{Terminal}!Terminal@{Terminal}}
+\index{Terminal@{Terminal}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{Terminal()}{Terminal()}}
+{\footnotesize\ttfamily Terminal\+::\+Terminal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classTerminal_a7c4d6a98c2ae96474e6745ce0c18d459}\label{classTerminal_a7c4d6a98c2ae96474e6745ce0c18d459}} 
+\index{Terminal@{Terminal}!cria\+\_\+usuario@{cria\+\_\+usuario}}
+\index{cria\+\_\+usuario@{cria\+\_\+usuario}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{cria\+\_\+usuario()}{cria\_usuario()}}
+{\footnotesize\ttfamily bool Terminal\+::cria\+\_\+usuario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_a915f2d35fcd5452b57af7af9af496c1e}\label{classTerminal_a915f2d35fcd5452b57af7af9af496c1e}} 
+\index{Terminal@{Terminal}!deletar\+\_\+grupo@{deletar\+\_\+grupo}}
+\index{deletar\+\_\+grupo@{deletar\+\_\+grupo}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{deletar\+\_\+grupo()}{deletar\_grupo()}}
+{\footnotesize\ttfamily bool Terminal\+::deletar\+\_\+grupo (\begin{DoxyParamCaption}\item[{string}]{comando }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_ac3e557f2c92b1f3a28e7a1363cd002a5}\label{classTerminal_ac3e557f2c92b1f3a28e7a1363cd002a5}} 
+\index{Terminal@{Terminal}!deletar\+\_\+prioridade@{deletar\+\_\+prioridade}}
+\index{deletar\+\_\+prioridade@{deletar\+\_\+prioridade}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{deletar\+\_\+prioridade()}{deletar\_prioridade()}}
+{\footnotesize\ttfamily bool Terminal\+::deletar\+\_\+prioridade (\begin{DoxyParamCaption}\item[{string}]{comando }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_a207ca524c3b42aeb03d8e4aca1eee4a0}\label{classTerminal_a207ca524c3b42aeb03d8e4aca1eee4a0}} 
+\index{Terminal@{Terminal}!deletar\+\_\+tarefa@{deletar\+\_\+tarefa}}
+\index{deletar\+\_\+tarefa@{deletar\+\_\+tarefa}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{deletar\+\_\+tarefa()}{deletar\_tarefa()}}
+{\footnotesize\ttfamily bool Terminal\+::deletar\+\_\+tarefa (\begin{DoxyParamCaption}\item[{string}]{comando }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_aad539ca6e1d50e024ec4256bdf3b0e00}\label{classTerminal_aad539ca6e1d50e024ec4256bdf3b0e00}} 
+\index{Terminal@{Terminal}!desmarcar\+\_\+concluida@{desmarcar\+\_\+concluida}}
+\index{desmarcar\+\_\+concluida@{desmarcar\+\_\+concluida}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{desmarcar\+\_\+concluida()}{desmarcar\_concluida()}}
+{\footnotesize\ttfamily bool Terminal\+::desmarcar\+\_\+concluida (\begin{DoxyParamCaption}\item[{string}]{comando }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_a318e04ea1bea16073451b6014fcde53e}\label{classTerminal_a318e04ea1bea16073451b6014fcde53e}} 
+\index{Terminal@{Terminal}!editar\+\_\+desc\+\_\+grupo@{editar\+\_\+desc\+\_\+grupo}}
+\index{editar\+\_\+desc\+\_\+grupo@{editar\+\_\+desc\+\_\+grupo}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{editar\+\_\+desc\+\_\+grupo()}{editar\_desc\_grupo()}}
+{\footnotesize\ttfamily bool Terminal\+::editar\+\_\+desc\+\_\+grupo (\begin{DoxyParamCaption}\item[{string}]{comando }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_a1700bd13d74d5b81ff870bfccfc20e86}\label{classTerminal_a1700bd13d74d5b81ff870bfccfc20e86}} 
+\index{Terminal@{Terminal}!editar\+\_\+desc\+\_\+tarefa@{editar\+\_\+desc\+\_\+tarefa}}
+\index{editar\+\_\+desc\+\_\+tarefa@{editar\+\_\+desc\+\_\+tarefa}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{editar\+\_\+desc\+\_\+tarefa()}{editar\_desc\_tarefa()}}
+{\footnotesize\ttfamily bool Terminal\+::editar\+\_\+desc\+\_\+tarefa (\begin{DoxyParamCaption}\item[{string}]{comando }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_a08b680a0760ae5fbab03fa2098250c7b}\label{classTerminal_a08b680a0760ae5fbab03fa2098250c7b}} 
+\index{Terminal@{Terminal}!editar\+\_\+grupo\+\_\+tarefa@{editar\+\_\+grupo\+\_\+tarefa}}
+\index{editar\+\_\+grupo\+\_\+tarefa@{editar\+\_\+grupo\+\_\+tarefa}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{editar\+\_\+grupo\+\_\+tarefa()}{editar\_grupo\_tarefa()}}
+{\footnotesize\ttfamily bool Terminal\+::editar\+\_\+grupo\+\_\+tarefa (\begin{DoxyParamCaption}\item[{string}]{comando }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_ad8941034607b656e5dcd279ce35a3f54}\label{classTerminal_ad8941034607b656e5dcd279ce35a3f54}} 
+\index{Terminal@{Terminal}!editar\+\_\+nivel\+\_\+prd@{editar\+\_\+nivel\+\_\+prd}}
+\index{editar\+\_\+nivel\+\_\+prd@{editar\+\_\+nivel\+\_\+prd}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{editar\+\_\+nivel\+\_\+prd()}{editar\_nivel\_prd()}}
+{\footnotesize\ttfamily bool Terminal\+::editar\+\_\+nivel\+\_\+prd (\begin{DoxyParamCaption}\item[{string}]{comando }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_a542446375398d23c429e38ce92ef2855}\label{classTerminal_a542446375398d23c429e38ce92ef2855}} 
+\index{Terminal@{Terminal}!editar\+\_\+nome\+\_\+grupo@{editar\+\_\+nome\+\_\+grupo}}
+\index{editar\+\_\+nome\+\_\+grupo@{editar\+\_\+nome\+\_\+grupo}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{editar\+\_\+nome\+\_\+grupo()}{editar\_nome\_grupo()}}
+{\footnotesize\ttfamily bool Terminal\+::editar\+\_\+nome\+\_\+grupo (\begin{DoxyParamCaption}\item[{string}]{comando }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_a2d1957dcc0e404c16073f9c15fa2508e}\label{classTerminal_a2d1957dcc0e404c16073f9c15fa2508e}} 
+\index{Terminal@{Terminal}!editar\+\_\+nome\+\_\+prd@{editar\+\_\+nome\+\_\+prd}}
+\index{editar\+\_\+nome\+\_\+prd@{editar\+\_\+nome\+\_\+prd}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{editar\+\_\+nome\+\_\+prd()}{editar\_nome\_prd()}}
+{\footnotesize\ttfamily bool Terminal\+::editar\+\_\+nome\+\_\+prd (\begin{DoxyParamCaption}\item[{string}]{comando }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_ae0ddc1e5b294f6fbe62a5a70c267cb72}\label{classTerminal_ae0ddc1e5b294f6fbe62a5a70c267cb72}} 
+\index{Terminal@{Terminal}!editar\+\_\+prazo\+\_\+tarefa@{editar\+\_\+prazo\+\_\+tarefa}}
+\index{editar\+\_\+prazo\+\_\+tarefa@{editar\+\_\+prazo\+\_\+tarefa}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{editar\+\_\+prazo\+\_\+tarefa()}{editar\_prazo\_tarefa()}}
+{\footnotesize\ttfamily bool Terminal\+::editar\+\_\+prazo\+\_\+tarefa (\begin{DoxyParamCaption}\item[{string}]{comando }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_abeeb442470656d2b6a4bf90079c35d74}\label{classTerminal_abeeb442470656d2b6a4bf90079c35d74}} 
+\index{Terminal@{Terminal}!editar\+\_\+prd\+\_\+tarefa@{editar\+\_\+prd\+\_\+tarefa}}
+\index{editar\+\_\+prd\+\_\+tarefa@{editar\+\_\+prd\+\_\+tarefa}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{editar\+\_\+prd\+\_\+tarefa()}{editar\_prd\_tarefa()}}
+{\footnotesize\ttfamily bool Terminal\+::editar\+\_\+prd\+\_\+tarefa (\begin{DoxyParamCaption}\item[{string}]{comando }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_ae01a6f6ca1a48721d6327051e6fe6a22}\label{classTerminal_ae01a6f6ca1a48721d6327051e6fe6a22}} 
+\index{Terminal@{Terminal}!editar\+\_\+titulo\+\_\+tarefa@{editar\+\_\+titulo\+\_\+tarefa}}
+\index{editar\+\_\+titulo\+\_\+tarefa@{editar\+\_\+titulo\+\_\+tarefa}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{editar\+\_\+titulo\+\_\+tarefa()}{editar\_titulo\_tarefa()}}
+{\footnotesize\ttfamily bool Terminal\+::editar\+\_\+titulo\+\_\+tarefa (\begin{DoxyParamCaption}\item[{string}]{comando }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_a74aa95517ba338132e791a2aefb77b7a}\label{classTerminal_a74aa95517ba338132e791a2aefb77b7a}} 
+\index{Terminal@{Terminal}!espaco\+\_\+horizontal@{espaco\+\_\+horizontal}}
+\index{espaco\+\_\+horizontal@{espaco\+\_\+horizontal}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{espaco\+\_\+horizontal()}{espaco\_horizontal()}}
+{\footnotesize\ttfamily string Terminal\+::espaco\+\_\+horizontal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_af3b082b98755b9f60f02315e5d207538}\label{classTerminal_af3b082b98755b9f60f02315e5d207538}} 
+\index{Terminal@{Terminal}!espaco\+\_\+vertical@{espaco\+\_\+vertical}}
+\index{espaco\+\_\+vertical@{espaco\+\_\+vertical}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{espaco\+\_\+vertical()}{espaco\_vertical()}}
+{\footnotesize\ttfamily string Terminal\+::espaco\+\_\+vertical (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_af2b2089477ced07e4acf9e8acafcd2f4}\label{classTerminal_af2b2089477ced07e4acf9e8acafcd2f4}} 
+\index{Terminal@{Terminal}!exibe\+\_\+tarefa@{exibe\+\_\+tarefa}}
+\index{exibe\+\_\+tarefa@{exibe\+\_\+tarefa}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{exibe\+\_\+tarefa()}{exibe\_tarefa()}}
+{\footnotesize\ttfamily bool Terminal\+::exibe\+\_\+tarefa (\begin{DoxyParamCaption}\item[{string}]{comando }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_a83ec130f3b19df9b382d99484669a509}\label{classTerminal_a83ec130f3b19df9b382d99484669a509}} 
+\index{Terminal@{Terminal}!faz\+\_\+login@{faz\+\_\+login}}
+\index{faz\+\_\+login@{faz\+\_\+login}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{faz\+\_\+login()}{faz\_login()}}
+{\footnotesize\ttfamily bool Terminal\+::faz\+\_\+login (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_a55827d690f15a0b401d6ee01ae710020}\label{classTerminal_a55827d690f15a0b401d6ee01ae710020}} 
+\index{Terminal@{Terminal}!get\+\_\+entrada@{get\+\_\+entrada}}
+\index{get\+\_\+entrada@{get\+\_\+entrada}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{get\+\_\+entrada()}{get\_entrada()}}
+{\footnotesize\ttfamily string Terminal\+::get\+\_\+entrada (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_a32ee131eb01ec417804965d183699f78}\label{classTerminal_a32ee131eb01ec417804965d183699f78}} 
+\index{Terminal@{Terminal}!get\+\_\+qtd\+\_\+paginas@{get\+\_\+qtd\+\_\+paginas}}
+\index{get\+\_\+qtd\+\_\+paginas@{get\+\_\+qtd\+\_\+paginas}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{get\+\_\+qtd\+\_\+paginas()}{get\_qtd\_paginas()}}
+{\footnotesize\ttfamily int Terminal\+::get\+\_\+qtd\+\_\+paginas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_a4e72c12f3a0e6e3028cd0a87253966ca}\label{classTerminal_a4e72c12f3a0e6e3028cd0a87253966ca}} 
+\index{Terminal@{Terminal}!get\+\_\+qtd\+\_\+paginas\+\_\+grupos@{get\+\_\+qtd\+\_\+paginas\+\_\+grupos}}
+\index{get\+\_\+qtd\+\_\+paginas\+\_\+grupos@{get\+\_\+qtd\+\_\+paginas\+\_\+grupos}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{get\+\_\+qtd\+\_\+paginas\+\_\+grupos()}{get\_qtd\_paginas\_grupos()}}
+{\footnotesize\ttfamily int Terminal\+::get\+\_\+qtd\+\_\+paginas\+\_\+grupos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_a0ebaf26f7d680bcd1412c3c692c3b7b2}\label{classTerminal_a0ebaf26f7d680bcd1412c3c692c3b7b2}} 
+\index{Terminal@{Terminal}!get\+\_\+qtd\+\_\+paginas\+\_\+prd@{get\+\_\+qtd\+\_\+paginas\+\_\+prd}}
+\index{get\+\_\+qtd\+\_\+paginas\+\_\+prd@{get\+\_\+qtd\+\_\+paginas\+\_\+prd}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{get\+\_\+qtd\+\_\+paginas\+\_\+prd()}{get\_qtd\_paginas\_prd()}}
+{\footnotesize\ttfamily int Terminal\+::get\+\_\+qtd\+\_\+paginas\+\_\+prd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_aae5f31b6a4f5f1d7e7dcbbb438408fb4}\label{classTerminal_aae5f31b6a4f5f1d7e7dcbbb438408fb4}} 
+\index{Terminal@{Terminal}!inicia@{inicia}}
+\index{inicia@{inicia}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{inicia()}{inicia()}}
+{\footnotesize\ttfamily bool Terminal\+::inicia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_a7aa126267c7e71ed99082884610496c9}\label{classTerminal_a7aa126267c7e71ed99082884610496c9}} 
+\index{Terminal@{Terminal}!limpa\+\_\+terminal@{limpa\+\_\+terminal}}
+\index{limpa\+\_\+terminal@{limpa\+\_\+terminal}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{limpa\+\_\+terminal()}{limpa\_terminal()}}
+{\footnotesize\ttfamily bool Terminal\+::limpa\+\_\+terminal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_a46650fa9443239037a1a75afd963e51b}\label{classTerminal_a46650fa9443239037a1a75afd963e51b}} 
+\index{Terminal@{Terminal}!login\+\_\+ou\+\_\+registre@{login\+\_\+ou\+\_\+registre}}
+\index{login\+\_\+ou\+\_\+registre@{login\+\_\+ou\+\_\+registre}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{login\+\_\+ou\+\_\+registre()}{login\_ou\_registre()}}
+{\footnotesize\ttfamily bool Terminal\+::login\+\_\+ou\+\_\+registre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_ab5fabe06475207244e238a860e2aa469}\label{classTerminal_ab5fabe06475207244e238a860e2aa469}} 
+\index{Terminal@{Terminal}!logout@{logout}}
+\index{logout@{logout}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{logout()}{logout()}}
+{\footnotesize\ttfamily void Terminal\+::logout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_a63b9f303409fd5e787b7918b3d462e51}\label{classTerminal_a63b9f303409fd5e787b7918b3d462e51}} 
+\index{Terminal@{Terminal}!marcar\+\_\+concluida@{marcar\+\_\+concluida}}
+\index{marcar\+\_\+concluida@{marcar\+\_\+concluida}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{marcar\+\_\+concluida()}{marcar\_concluida()}}
+{\footnotesize\ttfamily bool Terminal\+::marcar\+\_\+concluida (\begin{DoxyParamCaption}\item[{string}]{comando }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_a15369b06a58cb3b06bfac023e21a2e6e}\label{classTerminal_a15369b06a58cb3b06bfac023e21a2e6e}} 
+\index{Terminal@{Terminal}!nova\+\_\+prioridade@{nova\+\_\+prioridade}}
+\index{nova\+\_\+prioridade@{nova\+\_\+prioridade}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{nova\+\_\+prioridade()}{nova\_prioridade()}}
+{\footnotesize\ttfamily bool Terminal\+::nova\+\_\+prioridade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_a05c347f323568a234ea3e12bc0c64315}\label{classTerminal_a05c347f323568a234ea3e12bc0c64315}} 
+\index{Terminal@{Terminal}!nova\+\_\+tarefa@{nova\+\_\+tarefa}}
+\index{nova\+\_\+tarefa@{nova\+\_\+tarefa}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{nova\+\_\+tarefa()}{nova\_tarefa()}}
+{\footnotesize\ttfamily bool Terminal\+::nova\+\_\+tarefa (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_a80591e4cc7da1010d922a4ffca469eba}\label{classTerminal_a80591e4cc7da1010d922a4ffca469eba}} 
+\index{Terminal@{Terminal}!novo\+\_\+grupo@{novo\+\_\+grupo}}
+\index{novo\+\_\+grupo@{novo\+\_\+grupo}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{novo\+\_\+grupo()}{novo\_grupo()}}
+{\footnotesize\ttfamily bool Terminal\+::novo\+\_\+grupo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_a661628dafc3f0227f4acb58c32c5090c}\label{classTerminal_a661628dafc3f0227f4acb58c32c5090c}} 
+\index{Terminal@{Terminal}!pagina\+\_\+existe@{pagina\+\_\+existe}}
+\index{pagina\+\_\+existe@{pagina\+\_\+existe}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{pagina\+\_\+existe()}{pagina\_existe()}}
+{\footnotesize\ttfamily bool Terminal\+::pagina\+\_\+existe (\begin{DoxyParamCaption}\item[{int}]{pagina }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_af95bd1d7646ccffb64be117d5d16d4e5}\label{classTerminal_af95bd1d7646ccffb64be117d5d16d4e5}} 
+\index{Terminal@{Terminal}!pagina\+\_\+grupo\+\_\+existe@{pagina\+\_\+grupo\+\_\+existe}}
+\index{pagina\+\_\+grupo\+\_\+existe@{pagina\+\_\+grupo\+\_\+existe}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{pagina\+\_\+grupo\+\_\+existe()}{pagina\_grupo\_existe()}}
+{\footnotesize\ttfamily bool Terminal\+::pagina\+\_\+grupo\+\_\+existe (\begin{DoxyParamCaption}\item[{int}]{pagina }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_a6ff33aa1b1b2a2120542cac16f81c4b5}\label{classTerminal_a6ff33aa1b1b2a2120542cac16f81c4b5}} 
+\index{Terminal@{Terminal}!pagina\+\_\+prd\+\_\+existe@{pagina\+\_\+prd\+\_\+existe}}
+\index{pagina\+\_\+prd\+\_\+existe@{pagina\+\_\+prd\+\_\+existe}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{pagina\+\_\+prd\+\_\+existe()}{pagina\_prd\_existe()}}
+{\footnotesize\ttfamily bool Terminal\+::pagina\+\_\+prd\+\_\+existe (\begin{DoxyParamCaption}\item[{int}]{pagina }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_a7447fa08bbace168d7e3043d13ad3fa4}\label{classTerminal_a7447fa08bbace168d7e3043d13ad3fa4}} 
+\index{Terminal@{Terminal}!pede\+\_\+comando@{pede\+\_\+comando}}
+\index{pede\+\_\+comando@{pede\+\_\+comando}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{pede\+\_\+comando()}{pede\_comando()}}
+{\footnotesize\ttfamily bool Terminal\+::pede\+\_\+comando (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_a04c02a475ddfd34ab7ac354ef35b8878}\label{classTerminal_a04c02a475ddfd34ab7ac354ef35b8878}} 
+\index{Terminal@{Terminal}!prazo\+\_\+valido@{prazo\+\_\+valido}}
+\index{prazo\+\_\+valido@{prazo\+\_\+valido}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{prazo\+\_\+valido()}{prazo\_valido()}}
+{\footnotesize\ttfamily bool Terminal\+::prazo\+\_\+valido (\begin{DoxyParamCaption}\item[{string}]{prazo }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_aed7124f0bc24d4b77971f16d2f186a9b}\label{classTerminal_aed7124f0bc24d4b77971f16d2f186a9b}} 
+\index{Terminal@{Terminal}!print@{print}}
+\index{print@{print}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily bool Terminal\+::print (\begin{DoxyParamCaption}\item[{string}]{msg,  }\item[{bool}]{quebra\+\_\+de\+\_\+linha }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_ad61f4e49e2c7aad146ae193920c8e2e8}\label{classTerminal_ad61f4e49e2c7aad146ae193920c8e2e8}} 
+\index{Terminal@{Terminal}!print\+\_\+ajuda@{print\+\_\+ajuda}}
+\index{print\+\_\+ajuda@{print\+\_\+ajuda}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{print\+\_\+ajuda()}{print\_ajuda()}}
+{\footnotesize\ttfamily bool Terminal\+::print\+\_\+ajuda (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_ab077ac695729b722e0c0e07f8508aa55}\label{classTerminal_ab077ac695729b722e0c0e07f8508aa55}} 
+\index{Terminal@{Terminal}!print\+\_\+cabecalho@{print\+\_\+cabecalho}}
+\index{print\+\_\+cabecalho@{print\+\_\+cabecalho}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{print\+\_\+cabecalho()}{print\_cabecalho()}}
+{\footnotesize\ttfamily bool Terminal\+::print\+\_\+cabecalho (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_ae90c7487c329e9210234456f4e2723d9}\label{classTerminal_ae90c7487c329e9210234456f4e2723d9}} 
+\index{Terminal@{Terminal}!print\+\_\+cabecalho\+\_\+grupo@{print\+\_\+cabecalho\+\_\+grupo}}
+\index{print\+\_\+cabecalho\+\_\+grupo@{print\+\_\+cabecalho\+\_\+grupo}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{print\+\_\+cabecalho\+\_\+grupo()}{print\_cabecalho\_grupo()}}
+{\footnotesize\ttfamily bool Terminal\+::print\+\_\+cabecalho\+\_\+grupo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_aeb95c3c6aa25ee2fa7898ed144ab47b5}\label{classTerminal_aeb95c3c6aa25ee2fa7898ed144ab47b5}} 
+\index{Terminal@{Terminal}!print\+\_\+cabecalho\+\_\+prd@{print\+\_\+cabecalho\+\_\+prd}}
+\index{print\+\_\+cabecalho\+\_\+prd@{print\+\_\+cabecalho\+\_\+prd}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{print\+\_\+cabecalho\+\_\+prd()}{print\_cabecalho\_prd()}}
+{\footnotesize\ttfamily bool Terminal\+::print\+\_\+cabecalho\+\_\+prd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_ab0f81f0dd06888554d817481140c953d}\label{classTerminal_ab0f81f0dd06888554d817481140c953d}} 
+\index{Terminal@{Terminal}!print\+\_\+centralizado@{print\+\_\+centralizado}}
+\index{print\+\_\+centralizado@{print\+\_\+centralizado}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{print\+\_\+centralizado()}{print\_centralizado()}}
+{\footnotesize\ttfamily bool Terminal\+::print\+\_\+centralizado (\begin{DoxyParamCaption}\item[{string}]{texto }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_a9bb92733eb900a01a88c4e2eee17d938}\label{classTerminal_a9bb92733eb900a01a88c4e2eee17d938}} 
+\index{Terminal@{Terminal}!print\+\_\+direita@{print\+\_\+direita}}
+\index{print\+\_\+direita@{print\+\_\+direita}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{print\+\_\+direita()}{print\_direita()}}
+{\footnotesize\ttfamily bool Terminal\+::print\+\_\+direita (\begin{DoxyParamCaption}\item[{string}]{texto }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_af5e724ead0f64b07a48d87a9942997e8}\label{classTerminal_af5e724ead0f64b07a48d87a9942997e8}} 
+\index{Terminal@{Terminal}!print\+\_\+erro@{print\+\_\+erro}}
+\index{print\+\_\+erro@{print\+\_\+erro}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{print\+\_\+erro()}{print\_erro()}}
+{\footnotesize\ttfamily bool Terminal\+::print\+\_\+erro (\begin{DoxyParamCaption}\item[{string}]{msg\+\_\+erro }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_ae0951f8966234d5ec902112368a7c4a8}\label{classTerminal_ae0951f8966234d5ec902112368a7c4a8}} 
+\index{Terminal@{Terminal}!print\+\_\+grupo@{print\+\_\+grupo}}
+\index{print\+\_\+grupo@{print\+\_\+grupo}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{print\+\_\+grupo()}{print\_grupo()}}
+{\footnotesize\ttfamily bool Terminal\+::print\+\_\+grupo (\begin{DoxyParamCaption}\item[{\hyperlink{classGrupo}{Grupo} $\ast$}]{grupo,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_a1b8493b5a3ad18fe1f0ee784a70c6d77}\label{classTerminal_a1b8493b5a3ad18fe1f0ee784a70c6d77}} 
+\index{Terminal@{Terminal}!print\+\_\+grupos@{print\+\_\+grupos}}
+\index{print\+\_\+grupos@{print\+\_\+grupos}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{print\+\_\+grupos()}{print\_grupos()}}
+{\footnotesize\ttfamily bool Terminal\+::print\+\_\+grupos (\begin{DoxyParamCaption}\item[{int}]{pagina }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_a4b1699a246eedcad0762c074c27ed3dc}\label{classTerminal_a4b1699a246eedcad0762c074c27ed3dc}} 
+\index{Terminal@{Terminal}!print\+\_\+paginacao@{print\+\_\+paginacao}}
+\index{print\+\_\+paginacao@{print\+\_\+paginacao}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{print\+\_\+paginacao()}{print\_paginacao()}}
+{\footnotesize\ttfamily bool Terminal\+::print\+\_\+paginacao (\begin{DoxyParamCaption}\item[{int}]{pagina\+\_\+atual }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_a33b9112ee605314c941413afd3d045fc}\label{classTerminal_a33b9112ee605314c941413afd3d045fc}} 
+\index{Terminal@{Terminal}!print\+\_\+paginacao\+\_\+grupos@{print\+\_\+paginacao\+\_\+grupos}}
+\index{print\+\_\+paginacao\+\_\+grupos@{print\+\_\+paginacao\+\_\+grupos}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{print\+\_\+paginacao\+\_\+grupos()}{print\_paginacao\_grupos()}}
+{\footnotesize\ttfamily bool Terminal\+::print\+\_\+paginacao\+\_\+grupos (\begin{DoxyParamCaption}\item[{int}]{pagina\+\_\+atual }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_af7c7bbdbe5c28a4e797a42b4247ff121}\label{classTerminal_af7c7bbdbe5c28a4e797a42b4247ff121}} 
+\index{Terminal@{Terminal}!print\+\_\+paginacao\+\_\+prd@{print\+\_\+paginacao\+\_\+prd}}
+\index{print\+\_\+paginacao\+\_\+prd@{print\+\_\+paginacao\+\_\+prd}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{print\+\_\+paginacao\+\_\+prd()}{print\_paginacao\_prd()}}
+{\footnotesize\ttfamily bool Terminal\+::print\+\_\+paginacao\+\_\+prd (\begin{DoxyParamCaption}\item[{int}]{pagina\+\_\+atual }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_a1065a9f3083675e569a9ea49a07e5036}\label{classTerminal_a1065a9f3083675e569a9ea49a07e5036}} 
+\index{Terminal@{Terminal}!print\+\_\+prioridade@{print\+\_\+prioridade}}
+\index{print\+\_\+prioridade@{print\+\_\+prioridade}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{print\+\_\+prioridade()}{print\_prioridade()}}
+{\footnotesize\ttfamily bool Terminal\+::print\+\_\+prioridade (\begin{DoxyParamCaption}\item[{\hyperlink{classPrioridade}{Prioridade} $\ast$}]{prioridade,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_a2c636ad455aa6e8f4ee0fc57be74fb09}\label{classTerminal_a2c636ad455aa6e8f4ee0fc57be74fb09}} 
+\index{Terminal@{Terminal}!print\+\_\+prioridades@{print\+\_\+prioridades}}
+\index{print\+\_\+prioridades@{print\+\_\+prioridades}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{print\+\_\+prioridades()}{print\_prioridades()}}
+{\footnotesize\ttfamily bool Terminal\+::print\+\_\+prioridades (\begin{DoxyParamCaption}\item[{int}]{pagina }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_ac93c6cd6c16b785783ad21ff7bf80ef6}\label{classTerminal_ac93c6cd6c16b785783ad21ff7bf80ef6}} 
+\index{Terminal@{Terminal}!print\+\_\+sucesso@{print\+\_\+sucesso}}
+\index{print\+\_\+sucesso@{print\+\_\+sucesso}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{print\+\_\+sucesso()}{print\_sucesso()}}
+{\footnotesize\ttfamily bool Terminal\+::print\+\_\+sucesso (\begin{DoxyParamCaption}\item[{string}]{msg\+\_\+sucesso }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_a3633af9ee180a1a129f9c33c1a3aa3b9}\label{classTerminal_a3633af9ee180a1a129f9c33c1a3aa3b9}} 
+\index{Terminal@{Terminal}!print\+\_\+tarefa@{print\+\_\+tarefa}}
+\index{print\+\_\+tarefa@{print\+\_\+tarefa}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{print\+\_\+tarefa()}{print\_tarefa()}}
+{\footnotesize\ttfamily bool Terminal\+::print\+\_\+tarefa (\begin{DoxyParamCaption}\item[{\hyperlink{classTarefa}{Tarefa} $\ast$}]{tarefa,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_a99b5e852d3339543af8d740422c0f58b}\label{classTerminal_a99b5e852d3339543af8d740422c0f58b}} 
+\index{Terminal@{Terminal}!print\+\_\+tarefas@{print\+\_\+tarefas}}
+\index{print\+\_\+tarefas@{print\+\_\+tarefas}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{print\+\_\+tarefas()}{print\_tarefas()}}
+{\footnotesize\ttfamily bool Terminal\+::print\+\_\+tarefas (\begin{DoxyParamCaption}\item[{int}]{pagina }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTerminal_af5853d7279661f75d23fb44ade174da2}\label{classTerminal_af5853d7279661f75d23fb44ade174da2}} 
+\index{Terminal@{Terminal}!tem\+\_\+tarefas@{tem\+\_\+tarefas}}
+\index{tem\+\_\+tarefas@{tem\+\_\+tarefas}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{tem\+\_\+tarefas()}{tem\_tarefas()}}
+{\footnotesize\ttfamily bool Terminal\+::tem\+\_\+tarefas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classTerminal_ac23f70e4a6bfe74cb430d10ce14f7d69}\label{classTerminal_ac23f70e4a6bfe74cb430d10ce14f7d69}} 
+\index{Terminal@{Terminal}!\+\_\+altura\+\_\+terminal@{\+\_\+altura\+\_\+terminal}}
+\index{\+\_\+altura\+\_\+terminal@{\+\_\+altura\+\_\+terminal}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{\+\_\+altura\+\_\+terminal}{\_altura\_terminal}}
+{\footnotesize\ttfamily int Terminal\+::\+\_\+altura\+\_\+terminal\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTerminal_ac8f19b80b3c009efad6017cf5236510a}\label{classTerminal_ac8f19b80b3c009efad6017cf5236510a}} 
+\index{Terminal@{Terminal}!\+\_\+largura\+\_\+terminal@{\+\_\+largura\+\_\+terminal}}
+\index{\+\_\+largura\+\_\+terminal@{\+\_\+largura\+\_\+terminal}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{\+\_\+largura\+\_\+terminal}{\_largura\_terminal}}
+{\footnotesize\ttfamily int Terminal\+::\+\_\+largura\+\_\+terminal\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTerminal_ac50acd9b920ff6d6759f953527869ea0}\label{classTerminal_ac50acd9b920ff6d6759f953527869ea0}} 
+\index{Terminal@{Terminal}!\+\_\+padding\+\_\+x@{\+\_\+padding\+\_\+x}}
+\index{\+\_\+padding\+\_\+x@{\+\_\+padding\+\_\+x}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{\+\_\+padding\+\_\+x}{\_padding\_x}}
+{\footnotesize\ttfamily int Terminal\+::\+\_\+padding\+\_\+x\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTerminal_aa11effca90a9379eeee9776a41a79456}\label{classTerminal_aa11effca90a9379eeee9776a41a79456}} 
+\index{Terminal@{Terminal}!\+\_\+padding\+\_\+y@{\+\_\+padding\+\_\+y}}
+\index{\+\_\+padding\+\_\+y@{\+\_\+padding\+\_\+y}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{\+\_\+padding\+\_\+y}{\_padding\_y}}
+{\footnotesize\ttfamily int Terminal\+::\+\_\+padding\+\_\+y\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTerminal_ae16d3b2e118315e028a06cea51e1a5ac}\label{classTerminal_ae16d3b2e118315e028a06cea51e1a5ac}} 
+\index{Terminal@{Terminal}!\+\_\+pagina\+\_\+atual@{\+\_\+pagina\+\_\+atual}}
+\index{\+\_\+pagina\+\_\+atual@{\+\_\+pagina\+\_\+atual}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{\+\_\+pagina\+\_\+atual}{\_pagina\_atual}}
+{\footnotesize\ttfamily unsigned int Terminal\+::\+\_\+pagina\+\_\+atual\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTerminal_a13bab737b1972d98bc4c8912fad52b2a}\label{classTerminal_a13bab737b1972d98bc4c8912fad52b2a}} 
+\index{Terminal@{Terminal}!\+\_\+storage@{\+\_\+storage}}
+\index{\+\_\+storage@{\+\_\+storage}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{\+\_\+storage}{\_storage}}
+{\footnotesize\ttfamily \hyperlink{classStorage}{Storage}$\ast$ Terminal\+::\+\_\+storage\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTerminal_a51ad09d06d4ca9f3204d266d94c8fdcc}\label{classTerminal_a51ad09d06d4ca9f3204d266d94c8fdcc}} 
+\index{Terminal@{Terminal}!\+\_\+tarefas\+\_\+por\+\_\+pagina@{\+\_\+tarefas\+\_\+por\+\_\+pagina}}
+\index{\+\_\+tarefas\+\_\+por\+\_\+pagina@{\+\_\+tarefas\+\_\+por\+\_\+pagina}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{\+\_\+tarefas\+\_\+por\+\_\+pagina}{\_tarefas\_por\_pagina}}
+{\footnotesize\ttfamily unsigned int Terminal\+::\+\_\+tarefas\+\_\+por\+\_\+pagina\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTerminal_aa5f996ee61173aaacf9b843fa211426e}\label{classTerminal_aa5f996ee61173aaacf9b843fa211426e}} 
+\index{Terminal@{Terminal}!\+\_\+usuario@{\+\_\+usuario}}
+\index{\+\_\+usuario@{\+\_\+usuario}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{\+\_\+usuario}{\_usuario}}
+{\footnotesize\ttfamily \hyperlink{classUsuario}{Usuario} Terminal\+::\+\_\+usuario\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{terminal_8hpp}{terminal.\+hpp}\end{DoxyCompactItemize}

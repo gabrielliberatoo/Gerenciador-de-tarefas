@@ -1,0 +1,293 @@
+\hypertarget{classTarefa}{}\section{Tarefa Class Reference}
+\label{classTarefa}\index{Tarefa@{Tarefa}}
+
+
+Triangle class used for triangle manipulations.  
+
+
+
+
+{\ttfamily \#include $<$tarefa.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTarefa_a6567c607df9f7dca0d23f82d9e20c7fa}{Tarefa} (string titulo, string descricao, string prazo, bool concluido, \hyperlink{classGrupo}{Grupo} $\ast$grupo\+\_\+tarefa, \hyperlink{classPrioridade}{Prioridade} $\ast$prioridade\+\_\+tarefa)
+\begin{DoxyCompactList}\small\item\em Método construtor da classe \hyperlink{classTarefa}{Tarefa}. \end{DoxyCompactList}\item 
+string \hyperlink{classTarefa_a76abc4ef4d7c2cd5ab2e9530700f69aa}{get\+\_\+titulo} ()
+\begin{DoxyCompactList}\small\item\em Função que retorna o titulo da tarefa. \end{DoxyCompactList}\item 
+string \hyperlink{classTarefa_aa2bb888f5bc93272e6e0aa5c0f3879fa}{get\+\_\+descricao} ()
+\begin{DoxyCompactList}\small\item\em Função que retorna a descrição da tarefa. \end{DoxyCompactList}\item 
+string \hyperlink{classTarefa_a076d7bd66a444b26cb8d52ff34bbe39e}{get\+\_\+prazo} ()
+\begin{DoxyCompactList}\small\item\em Função que retorna a data prazo da tarefa. \end{DoxyCompactList}\item 
+bool \hyperlink{classTarefa_ae6a61ad035a0685f7b201c4a726413da}{get\+\_\+concluido} ()
+\begin{DoxyCompactList}\small\item\em Função que retorna True se a tarefa está concluida e False se não está. \end{DoxyCompactList}\item 
+string \hyperlink{classTarefa_adacf20f53dfea470d6899e7a82d0519c}{get\+\_\+nome\+\_\+grupo} ()
+\begin{DoxyCompactList}\small\item\em Função que retorna o titulo do grupo que a tarefa está associada. \end{DoxyCompactList}\item 
+\hyperlink{classGrupo}{Grupo} $\ast$ \hyperlink{classTarefa_adf6a36ff108e0c1feecdfbaa38521818}{get\+\_\+grupo} ()
+\begin{DoxyCompactList}\small\item\em Função que retorna o objeto \hyperlink{classGrupo}{Grupo} que a tarefa está associada. \end{DoxyCompactList}\item 
+int \hyperlink{classTarefa_a5aaca625bccf6f153ec783fe43790cc7}{get\+\_\+valor\+\_\+prioridade} ()
+\begin{DoxyCompactList}\small\item\em Função que retorna o nivel de prioridade da tarefa. \end{DoxyCompactList}\item 
+\hyperlink{classPrioridade}{Prioridade} $\ast$ \hyperlink{classTarefa_a340f64a1d2344a8088a8e4a85ba03569}{get\+\_\+prioridade} ()
+\begin{DoxyCompactList}\small\item\em Função que retorna o objeto \hyperlink{classPrioridade}{Prioridade} associado a tarefa. \end{DoxyCompactList}\item 
+string \hyperlink{classTarefa_a9918d709f8b7da0dfe2e60255dd7b167}{get\+\_\+nome\+\_\+prioridade} ()
+\begin{DoxyCompactList}\small\item\em Função que retorna o titulo da prioridade que a tarefa está associada. $\ast$/. \end{DoxyCompactList}\item 
+void \hyperlink{classTarefa_af4e2d3743837b146e07b97af8027495d}{editar\+\_\+titulo} (string novo\+\_\+titulo)
+\item 
+void \hyperlink{classTarefa_afb4366be9b8e3e5c16bebc9cb80e5380}{editar\+\_\+descricao} (string nova\+\_\+descricao)
+\item 
+void \hyperlink{classTarefa_abe764b58fe48c8d191a7fc3cea2e9b72}{editar\+\_\+prazo} (string novo\+\_\+prazo)
+\item 
+void \hyperlink{classTarefa_a23d6b6e297a821fbb6f2aa91ac43fa11}{editar\+\_\+status} (bool novo\+\_\+status)
+\item 
+void \hyperlink{classTarefa_a5abdc3ba5dc800ade79d36b9aafd0e7f}{editar\+\_\+prioridade} (\hyperlink{classPrioridade}{Prioridade} $\ast$prioridade)
+\item 
+void \hyperlink{classTarefa_abfe620f867e896cb77d016b229e92f6e}{editar\+\_\+grupo} (\hyperlink{classGrupo}{Grupo} $\ast$grupo)
+\item 
+bool \hyperlink{classTarefa_a604bd50ddc5ad8c919b432282d141ee0}{prazo\+\_\+passou} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classTarefa_aced2ea3f6ece755a69d49d58a8f51bbf}{compara\+\_\+prioridade} (\hyperlink{classTarefa}{Tarefa} $\ast$tarefa1, \hyperlink{classTarefa}{Tarefa} $\ast$tarefa2)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classTarefa_a2ff0165cde44ccf91162eeb22edb2c4d}{\+\_\+titulo}
+\begin{DoxyCompactList}\small\item\em guarda o titulo da tarefa. \end{DoxyCompactList}\item 
+string \hyperlink{classTarefa_acc9dffa5eb12b46370e67b32b96863f2}{\+\_\+descricao}
+\begin{DoxyCompactList}\small\item\em guarda a descrição da tarefa. \end{DoxyCompactList}\item 
+string \hyperlink{classTarefa_a4836ad542cc73ff37b4473587fc630cd}{\+\_\+prazo}
+\begin{DoxyCompactList}\small\item\em guarda a data do prazo da tarefa. \end{DoxyCompactList}\item 
+bool \hyperlink{classTarefa_a02764495d093d388ec2fb21c0bde3603}{\+\_\+concluido}
+\begin{DoxyCompactList}\small\item\em bool que retorna true se a tarefa for marcada como concluida. \end{DoxyCompactList}\item 
+\hyperlink{classPrioridade}{Prioridade} $\ast$ \hyperlink{classTarefa_a2f41a39b7098d77a1e1773cb1a4177d4}{\+\_\+prioridade\+\_\+tarefa}
+\begin{DoxyCompactList}\small\item\em Guarda o a prioridade atribuida a tarefa. \end{DoxyCompactList}\item 
+\hyperlink{classGrupo}{Grupo} $\ast$ \hyperlink{classTarefa_a54326411de197afb5a6f8d98d109e840}{\+\_\+grupo\+\_\+tarefa}
+\begin{DoxyCompactList}\small\item\em guarda o grupo atribuido a tarefa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Triangle class used for triangle manipulations. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTarefa_a6567c607df9f7dca0d23f82d9e20c7fa}\label{classTarefa_a6567c607df9f7dca0d23f82d9e20c7fa}} 
+\index{Tarefa@{Tarefa}!Tarefa@{Tarefa}}
+\index{Tarefa@{Tarefa}!Tarefa@{Tarefa}}
+\subsubsection{\texorpdfstring{Tarefa()}{Tarefa()}}
+{\footnotesize\ttfamily Tarefa\+::\+Tarefa (\begin{DoxyParamCaption}\item[{string}]{titulo,  }\item[{string}]{descricao,  }\item[{string}]{prazo,  }\item[{bool}]{concluido,  }\item[{\hyperlink{classGrupo}{Grupo} $\ast$}]{grupo\+\_\+tarefa,  }\item[{\hyperlink{classPrioridade}{Prioridade} $\ast$}]{prioridade\+\_\+tarefa }\end{DoxyParamCaption})}
+
+
+
+Método construtor da classe \hyperlink{classTarefa}{Tarefa}. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classTarefa_aced2ea3f6ece755a69d49d58a8f51bbf}\label{classTarefa_aced2ea3f6ece755a69d49d58a8f51bbf}} 
+\index{Tarefa@{Tarefa}!compara\+\_\+prioridade@{compara\+\_\+prioridade}}
+\index{compara\+\_\+prioridade@{compara\+\_\+prioridade}!Tarefa@{Tarefa}}
+\subsubsection{\texorpdfstring{compara\+\_\+prioridade()}{compara\_prioridade()}}
+{\footnotesize\ttfamily static bool Tarefa\+::compara\+\_\+prioridade (\begin{DoxyParamCaption}\item[{\hyperlink{classTarefa}{Tarefa} $\ast$}]{tarefa1,  }\item[{\hyperlink{classTarefa}{Tarefa} $\ast$}]{tarefa2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Função com dois parametros que compara o nivel de prioridade de duas tarefas. /param tarefa1 um objeto tarefa referente a primeira tarefa da comparação. /param tarefa2 um objeto tarefa referente a segunda tarefa da comparação. /return bool retorna True se a tarefa1 possui maior maior prioridade em comparação com a tarefa2. \mbox{\Hypertarget{classTarefa_afb4366be9b8e3e5c16bebc9cb80e5380}\label{classTarefa_afb4366be9b8e3e5c16bebc9cb80e5380}} 
+\index{Tarefa@{Tarefa}!editar\+\_\+descricao@{editar\+\_\+descricao}}
+\index{editar\+\_\+descricao@{editar\+\_\+descricao}!Tarefa@{Tarefa}}
+\subsubsection{\texorpdfstring{editar\+\_\+descricao()}{editar\_descricao()}}
+{\footnotesize\ttfamily void Tarefa\+::editar\+\_\+descricao (\begin{DoxyParamCaption}\item[{string}]{nova\+\_\+descricao }\end{DoxyParamCaption})}
+
+Função com um parametro que edita a descrição da tarefa. /param nova\+\_\+descrição uma string que contem o novo titulo da tarefa. /return void Sem retorno. \mbox{\Hypertarget{classTarefa_abfe620f867e896cb77d016b229e92f6e}\label{classTarefa_abfe620f867e896cb77d016b229e92f6e}} 
+\index{Tarefa@{Tarefa}!editar\+\_\+grupo@{editar\+\_\+grupo}}
+\index{editar\+\_\+grupo@{editar\+\_\+grupo}!Tarefa@{Tarefa}}
+\subsubsection{\texorpdfstring{editar\+\_\+grupo()}{editar\_grupo()}}
+{\footnotesize\ttfamily void Tarefa\+::editar\+\_\+grupo (\begin{DoxyParamCaption}\item[{\hyperlink{classGrupo}{Grupo} $\ast$}]{grupo }\end{DoxyParamCaption})}
+
+Função com um parametro que edita o grupo da tarefa. /param grupo um objeto grupo que contem o novo grupo da tarefa. /return void Sem retorno \mbox{\Hypertarget{classTarefa_abe764b58fe48c8d191a7fc3cea2e9b72}\label{classTarefa_abe764b58fe48c8d191a7fc3cea2e9b72}} 
+\index{Tarefa@{Tarefa}!editar\+\_\+prazo@{editar\+\_\+prazo}}
+\index{editar\+\_\+prazo@{editar\+\_\+prazo}!Tarefa@{Tarefa}}
+\subsubsection{\texorpdfstring{editar\+\_\+prazo()}{editar\_prazo()}}
+{\footnotesize\ttfamily void Tarefa\+::editar\+\_\+prazo (\begin{DoxyParamCaption}\item[{string}]{novo\+\_\+prazo }\end{DoxyParamCaption})}
+
+Função com um parametro que edita o prazo da tarefa. /param novo\+\_\+prazo uma string que contem o novo prazo da tarefa. /return void Sem retorno \mbox{\Hypertarget{classTarefa_a5abdc3ba5dc800ade79d36b9aafd0e7f}\label{classTarefa_a5abdc3ba5dc800ade79d36b9aafd0e7f}} 
+\index{Tarefa@{Tarefa}!editar\+\_\+prioridade@{editar\+\_\+prioridade}}
+\index{editar\+\_\+prioridade@{editar\+\_\+prioridade}!Tarefa@{Tarefa}}
+\subsubsection{\texorpdfstring{editar\+\_\+prioridade()}{editar\_prioridade()}}
+{\footnotesize\ttfamily void Tarefa\+::editar\+\_\+prioridade (\begin{DoxyParamCaption}\item[{\hyperlink{classPrioridade}{Prioridade} $\ast$}]{prioridade }\end{DoxyParamCaption})}
+
+Função com um parametro que edita a prioridade da tarefa. /param prioridade um objeto \hyperlink{classPrioridade}{Prioridade} que contem a nova prioridade da tarefa. /return void Sem retorno \mbox{\Hypertarget{classTarefa_a23d6b6e297a821fbb6f2aa91ac43fa11}\label{classTarefa_a23d6b6e297a821fbb6f2aa91ac43fa11}} 
+\index{Tarefa@{Tarefa}!editar\+\_\+status@{editar\+\_\+status}}
+\index{editar\+\_\+status@{editar\+\_\+status}!Tarefa@{Tarefa}}
+\subsubsection{\texorpdfstring{editar\+\_\+status()}{editar\_status()}}
+{\footnotesize\ttfamily void Tarefa\+::editar\+\_\+status (\begin{DoxyParamCaption}\item[{bool}]{novo\+\_\+status }\end{DoxyParamCaption})}
+
+Função com um parametro que edita o status da tarefa. /param novo\+\_\+titulo um bool que contem o status(concluido/pendente) da tarefa. /return void Sem retorno \mbox{\Hypertarget{classTarefa_af4e2d3743837b146e07b97af8027495d}\label{classTarefa_af4e2d3743837b146e07b97af8027495d}} 
+\index{Tarefa@{Tarefa}!editar\+\_\+titulo@{editar\+\_\+titulo}}
+\index{editar\+\_\+titulo@{editar\+\_\+titulo}!Tarefa@{Tarefa}}
+\subsubsection{\texorpdfstring{editar\+\_\+titulo()}{editar\_titulo()}}
+{\footnotesize\ttfamily void Tarefa\+::editar\+\_\+titulo (\begin{DoxyParamCaption}\item[{string}]{novo\+\_\+titulo }\end{DoxyParamCaption})}
+
+Função com um parametro que edita o titulo da tarefa. /param novo\+\_\+titulo uma string que contem o novo titulo da tarefa. /return void Sem retorno \mbox{\Hypertarget{classTarefa_ae6a61ad035a0685f7b201c4a726413da}\label{classTarefa_ae6a61ad035a0685f7b201c4a726413da}} 
+\index{Tarefa@{Tarefa}!get\+\_\+concluido@{get\+\_\+concluido}}
+\index{get\+\_\+concluido@{get\+\_\+concluido}!Tarefa@{Tarefa}}
+\subsubsection{\texorpdfstring{get\+\_\+concluido()}{get\_concluido()}}
+{\footnotesize\ttfamily bool Tarefa\+::get\+\_\+concluido (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função que retorna True se a tarefa está concluida e False se não está. 
+
+\mbox{\Hypertarget{classTarefa_aa2bb888f5bc93272e6e0aa5c0f3879fa}\label{classTarefa_aa2bb888f5bc93272e6e0aa5c0f3879fa}} 
+\index{Tarefa@{Tarefa}!get\+\_\+descricao@{get\+\_\+descricao}}
+\index{get\+\_\+descricao@{get\+\_\+descricao}!Tarefa@{Tarefa}}
+\subsubsection{\texorpdfstring{get\+\_\+descricao()}{get\_descricao()}}
+{\footnotesize\ttfamily string Tarefa\+::get\+\_\+descricao (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função que retorna a descrição da tarefa. 
+
+\mbox{\Hypertarget{classTarefa_adf6a36ff108e0c1feecdfbaa38521818}\label{classTarefa_adf6a36ff108e0c1feecdfbaa38521818}} 
+\index{Tarefa@{Tarefa}!get\+\_\+grupo@{get\+\_\+grupo}}
+\index{get\+\_\+grupo@{get\+\_\+grupo}!Tarefa@{Tarefa}}
+\subsubsection{\texorpdfstring{get\+\_\+grupo()}{get\_grupo()}}
+{\footnotesize\ttfamily \hyperlink{classGrupo}{Grupo}$\ast$ Tarefa\+::get\+\_\+grupo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função que retorna o objeto \hyperlink{classGrupo}{Grupo} que a tarefa está associada. 
+
+\mbox{\Hypertarget{classTarefa_adacf20f53dfea470d6899e7a82d0519c}\label{classTarefa_adacf20f53dfea470d6899e7a82d0519c}} 
+\index{Tarefa@{Tarefa}!get\+\_\+nome\+\_\+grupo@{get\+\_\+nome\+\_\+grupo}}
+\index{get\+\_\+nome\+\_\+grupo@{get\+\_\+nome\+\_\+grupo}!Tarefa@{Tarefa}}
+\subsubsection{\texorpdfstring{get\+\_\+nome\+\_\+grupo()}{get\_nome\_grupo()}}
+{\footnotesize\ttfamily string Tarefa\+::get\+\_\+nome\+\_\+grupo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função que retorna o titulo do grupo que a tarefa está associada. 
+
+\mbox{\Hypertarget{classTarefa_a9918d709f8b7da0dfe2e60255dd7b167}\label{classTarefa_a9918d709f8b7da0dfe2e60255dd7b167}} 
+\index{Tarefa@{Tarefa}!get\+\_\+nome\+\_\+prioridade@{get\+\_\+nome\+\_\+prioridade}}
+\index{get\+\_\+nome\+\_\+prioridade@{get\+\_\+nome\+\_\+prioridade}!Tarefa@{Tarefa}}
+\subsubsection{\texorpdfstring{get\+\_\+nome\+\_\+prioridade()}{get\_nome\_prioridade()}}
+{\footnotesize\ttfamily string Tarefa\+::get\+\_\+nome\+\_\+prioridade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função que retorna o titulo da prioridade que a tarefa está associada. $\ast$/. 
+
+\mbox{\Hypertarget{classTarefa_a076d7bd66a444b26cb8d52ff34bbe39e}\label{classTarefa_a076d7bd66a444b26cb8d52ff34bbe39e}} 
+\index{Tarefa@{Tarefa}!get\+\_\+prazo@{get\+\_\+prazo}}
+\index{get\+\_\+prazo@{get\+\_\+prazo}!Tarefa@{Tarefa}}
+\subsubsection{\texorpdfstring{get\+\_\+prazo()}{get\_prazo()}}
+{\footnotesize\ttfamily string Tarefa\+::get\+\_\+prazo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função que retorna a data prazo da tarefa. 
+
+\mbox{\Hypertarget{classTarefa_a340f64a1d2344a8088a8e4a85ba03569}\label{classTarefa_a340f64a1d2344a8088a8e4a85ba03569}} 
+\index{Tarefa@{Tarefa}!get\+\_\+prioridade@{get\+\_\+prioridade}}
+\index{get\+\_\+prioridade@{get\+\_\+prioridade}!Tarefa@{Tarefa}}
+\subsubsection{\texorpdfstring{get\+\_\+prioridade()}{get\_prioridade()}}
+{\footnotesize\ttfamily \hyperlink{classPrioridade}{Prioridade}$\ast$ Tarefa\+::get\+\_\+prioridade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função que retorna o objeto \hyperlink{classPrioridade}{Prioridade} associado a tarefa. 
+
+\mbox{\Hypertarget{classTarefa_a76abc4ef4d7c2cd5ab2e9530700f69aa}\label{classTarefa_a76abc4ef4d7c2cd5ab2e9530700f69aa}} 
+\index{Tarefa@{Tarefa}!get\+\_\+titulo@{get\+\_\+titulo}}
+\index{get\+\_\+titulo@{get\+\_\+titulo}!Tarefa@{Tarefa}}
+\subsubsection{\texorpdfstring{get\+\_\+titulo()}{get\_titulo()}}
+{\footnotesize\ttfamily string Tarefa\+::get\+\_\+titulo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função que retorna o titulo da tarefa. 
+
+\mbox{\Hypertarget{classTarefa_a5aaca625bccf6f153ec783fe43790cc7}\label{classTarefa_a5aaca625bccf6f153ec783fe43790cc7}} 
+\index{Tarefa@{Tarefa}!get\+\_\+valor\+\_\+prioridade@{get\+\_\+valor\+\_\+prioridade}}
+\index{get\+\_\+valor\+\_\+prioridade@{get\+\_\+valor\+\_\+prioridade}!Tarefa@{Tarefa}}
+\subsubsection{\texorpdfstring{get\+\_\+valor\+\_\+prioridade()}{get\_valor\_prioridade()}}
+{\footnotesize\ttfamily int Tarefa\+::get\+\_\+valor\+\_\+prioridade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função que retorna o nivel de prioridade da tarefa. 
+
+\mbox{\Hypertarget{classTarefa_a604bd50ddc5ad8c919b432282d141ee0}\label{classTarefa_a604bd50ddc5ad8c919b432282d141ee0}} 
+\index{Tarefa@{Tarefa}!prazo\+\_\+passou@{prazo\+\_\+passou}}
+\index{prazo\+\_\+passou@{prazo\+\_\+passou}!Tarefa@{Tarefa}}
+\subsubsection{\texorpdfstring{prazo\+\_\+passou()}{prazo\_passou()}}
+{\footnotesize\ttfamily bool Tarefa\+::prazo\+\_\+passou (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classTarefa_a02764495d093d388ec2fb21c0bde3603}\label{classTarefa_a02764495d093d388ec2fb21c0bde3603}} 
+\index{Tarefa@{Tarefa}!\+\_\+concluido@{\+\_\+concluido}}
+\index{\+\_\+concluido@{\+\_\+concluido}!Tarefa@{Tarefa}}
+\subsubsection{\texorpdfstring{\+\_\+concluido}{\_concluido}}
+{\footnotesize\ttfamily bool Tarefa\+::\+\_\+concluido\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+bool que retorna true se a tarefa for marcada como concluida. 
+
+\mbox{\Hypertarget{classTarefa_acc9dffa5eb12b46370e67b32b96863f2}\label{classTarefa_acc9dffa5eb12b46370e67b32b96863f2}} 
+\index{Tarefa@{Tarefa}!\+\_\+descricao@{\+\_\+descricao}}
+\index{\+\_\+descricao@{\+\_\+descricao}!Tarefa@{Tarefa}}
+\subsubsection{\texorpdfstring{\+\_\+descricao}{\_descricao}}
+{\footnotesize\ttfamily string Tarefa\+::\+\_\+descricao\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+guarda a descrição da tarefa. 
+
+\mbox{\Hypertarget{classTarefa_a54326411de197afb5a6f8d98d109e840}\label{classTarefa_a54326411de197afb5a6f8d98d109e840}} 
+\index{Tarefa@{Tarefa}!\+\_\+grupo\+\_\+tarefa@{\+\_\+grupo\+\_\+tarefa}}
+\index{\+\_\+grupo\+\_\+tarefa@{\+\_\+grupo\+\_\+tarefa}!Tarefa@{Tarefa}}
+\subsubsection{\texorpdfstring{\+\_\+grupo\+\_\+tarefa}{\_grupo\_tarefa}}
+{\footnotesize\ttfamily \hyperlink{classGrupo}{Grupo}$\ast$ Tarefa\+::\+\_\+grupo\+\_\+tarefa\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+guarda o grupo atribuido a tarefa. 
+
+\mbox{\Hypertarget{classTarefa_a4836ad542cc73ff37b4473587fc630cd}\label{classTarefa_a4836ad542cc73ff37b4473587fc630cd}} 
+\index{Tarefa@{Tarefa}!\+\_\+prazo@{\+\_\+prazo}}
+\index{\+\_\+prazo@{\+\_\+prazo}!Tarefa@{Tarefa}}
+\subsubsection{\texorpdfstring{\+\_\+prazo}{\_prazo}}
+{\footnotesize\ttfamily string Tarefa\+::\+\_\+prazo\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+guarda a data do prazo da tarefa. 
+
+\mbox{\Hypertarget{classTarefa_a2f41a39b7098d77a1e1773cb1a4177d4}\label{classTarefa_a2f41a39b7098d77a1e1773cb1a4177d4}} 
+\index{Tarefa@{Tarefa}!\+\_\+prioridade\+\_\+tarefa@{\+\_\+prioridade\+\_\+tarefa}}
+\index{\+\_\+prioridade\+\_\+tarefa@{\+\_\+prioridade\+\_\+tarefa}!Tarefa@{Tarefa}}
+\subsubsection{\texorpdfstring{\+\_\+prioridade\+\_\+tarefa}{\_prioridade\_tarefa}}
+{\footnotesize\ttfamily \hyperlink{classPrioridade}{Prioridade}$\ast$ Tarefa\+::\+\_\+prioridade\+\_\+tarefa\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Guarda o a prioridade atribuida a tarefa. 
+
+\mbox{\Hypertarget{classTarefa_a2ff0165cde44ccf91162eeb22edb2c4d}\label{classTarefa_a2ff0165cde44ccf91162eeb22edb2c4d}} 
+\index{Tarefa@{Tarefa}!\+\_\+titulo@{\+\_\+titulo}}
+\index{\+\_\+titulo@{\+\_\+titulo}!Tarefa@{Tarefa}}
+\subsubsection{\texorpdfstring{\+\_\+titulo}{\_titulo}}
+{\footnotesize\ttfamily string Tarefa\+::\+\_\+titulo\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+guarda o titulo da tarefa. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{tarefa_8hpp}{tarefa.\+hpp}\end{DoxyCompactItemize}
