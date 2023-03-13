@@ -1,4 +1,4 @@
-# 2022-2-TW-grupo08 - Gerenciador de tarefas
+# Gerenciador de Tarefas by: Guilherme Novais and Gabriel Liberato
 
 ![Tela Principal](./screenshots/tela_principal.png)
 
